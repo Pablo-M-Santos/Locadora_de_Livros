@@ -69,9 +69,6 @@ body{
     margin-bottom: 30px;
 }
 
-.menu-item:hover {
-    background-color: #f2f2f2;
-}
 
 .menu-item.bottom{
     width: 240px;
@@ -118,11 +115,6 @@ li a {
     font-size: 27px;
 }
 
-.menu-user {
-    position: absolute;
-    right: 170px;
-    width: 10px;
-}
 
 .user {
     margin-left: auto;
@@ -140,10 +132,33 @@ li a {
     cursor: pointer;    
 }
 
-.user h1 {
+
+.menu-user {
+    position: absolute;
+    right: 170px;
+    width: 10px;
+}
+
+.info {
+    margin-left: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #006666;
+    margin-right: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;    
+}
+
+.info h1 {
     position: absolute;
 }
-.user h2 {
+.info h2 {
     position: relative;
     text-align: center;
     font-size: 17px;
@@ -153,7 +168,7 @@ li a {
     color: black;
 }
 
-.user h3 {
+.info h3 {
     position: relative;
     text-align: center;
     font-size: 12px;
@@ -163,14 +178,13 @@ li a {
 }
 
 .sub-menu{
-    display: flex;
+    display: none;
     justify-content: center;
     background-color:white;
     box-shadow: 3px 5px 10px 0px rgba(0, 0, 0, 0.25);
     width: 170px;
-    height: 242px;
+    height: 140px;
     padding: 12px;
-    margin-left: auto;
 }
 
 .sub {
@@ -178,11 +192,13 @@ li a {
     cursor: auto;
 }
 
-.sub-menu hr {
-    position: relative;
-    top: 70px;
-    width: 100%;
-}
+.active-item {
+    background-color: #e8e8e8; 
+    transition: all 0.3s;
+  }
+  
+
+
 
 
 @media (max-width: 580px) {
