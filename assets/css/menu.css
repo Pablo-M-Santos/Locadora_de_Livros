@@ -58,6 +58,7 @@ body{
 
 .menu-item {
     display: flex;
+    align-items: center;
     background-color: white;
     padding: 13px 20px 12px 26px;
     text-decoration: none;
@@ -92,6 +93,7 @@ ul {
     background: #ffffff; 
     list-style: none;
     height: 62px;
+    margin-bottom: 10px;
 }
 
 li {
@@ -108,16 +110,21 @@ li a {
     display: block;
     color: rgb(0, 0, 0);
     text-align: center;
-    text-decoration: none;
-    padding: 12px 14px 12px 30px;
+    text-decoration: none;  
+    margin: 12px 14px 12px 30px;
 }
 
 #menuBtn {
     font-size: 27px;
-
 }
 
-.user{
+.menu-user {
+    position: absolute;
+    right: 170px;
+    width: 10px;
+}
+
+.user {
     margin-left: auto;
     width: 50px;
     height: 50px;
@@ -127,18 +134,56 @@ li a {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     color: #fff;
     font-size: 20px;
-    cursor: pointer;
+    cursor: pointer;    
 }
 
-
-iframe,
-h2,
-p {
-  margin: 20px;
-  color: #666;
+.user h1 {
+    position: absolute;
 }
+.user h2 {
+    position: relative;
+    text-align: center;
+    font-size: 17px;
+    top: 50px;
+    width: 170px;
+    font-weight: 700;
+    color: black;
+}
+
+.user h3 {
+    position: relative;
+    text-align: center;
+    font-size: 12px;
+    top: 55px;
+    width: 170px;
+    color: gray;
+}
+
+.sub-menu{
+    display: flex;
+    justify-content: center;
+    background-color:white;
+    box-shadow: 3px 5px 10px 0px rgba(0, 0, 0, 0.25);
+    width: 170px;
+    height: 242px;
+    padding: 12px;
+    margin-left: auto;
+}
+
+.sub {
+    margin: 0;
+    cursor: auto;
+}
+
+.sub-menu hr {
+    position: relative;
+    top: 70px;
+    width: 100%;
+}
+
 
 @media (max-width: 580px) {
   #sidebar {
