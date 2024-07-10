@@ -122,3 +122,94 @@ button {
     margin: 24.71px 0px 0px 52px;
 }
 
+@media (max-width: 1000px){
+    .container-interno h2 {
+      display: none;
+    }
+
+    .container-interno {
+        width: auto;
+        height: auto;
+        background-color: white;
+
+    }
+    .container-interno img {
+        margin: 0px 0px 10px 0px;
+    }
+
+    .container-externo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+        width: auto;
+        padding: 50px;
+    }
+
+    .container-externo {
+        margin-top: 0px;
+    }
+
+    .container-textos {
+        margin: 0px;
+    }
+
+    .container-textos .form, button {
+        margin-top: 40px;
+    }
+
+    .form input {
+        width: 400px;
+    }
+
+    .container-textos h1 {
+        font-size: 28px;
+    }
+
+    .container-textos h2 {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 600px) {
+    .container-externo {
+        box-shadow: none;
+        width: 100%;
+        padding: 0px;
+    }
+}
+
+@media (max-width: 500px) {
+    .form input {
+        width: 350px;
+    }
+
+    .container-textos h1 {
+        font-size: 26px;
+    }
+
+    .container-textos h2 {
+        font-size: 15px;
+    }
+
+    .container-interno img {
+        width: 160px;
+    }
+
+    .form button {
+        width: 200px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 400px) {
+    .form input {
+        width: 300px;
+    }
+}
+
+@media (max-width: 320px) {
+    .form input {
+        width: 300px;
+    }
+}

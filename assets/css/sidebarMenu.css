@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #DEDEDE;
+    font-family: 'Popins', sans-serif;
+ 
+}
+
+/* Sidebar css */
+.sidebar {
+    display: flex;
+    position: absolute;
+    color: #DFDFDF;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    max-width: 240px;
+    height: 100vh;
+    border: none;
+    box-shadow: 3px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    z-index: 5;
+    transition: margin-left 0.3s ease;
+    margin-left: 0;
+    font-weight: 800;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+}
+
+.sidebar.active {
+    margin-left: -240px;
+}
+
+img {
+    width: 106.62px;
+    height: 56px;
+    margin: 35px 67px 51px 66px;
+}
+
+#itens {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    list-style: none;
+    white-space: nowrap;
+}
+
+.item {
+    display: flex;
+    gap: 10px;
+    padding: 13px 0px 12px 26px;
+    cursor: pointer;
+    color: #000000;
+}
+
+.item.active-item {
+    background-color: #E8E8E8;
+}
+
+.item:hover:not(.active-item) {
+    transition: ease-in-out 0.3s;
+    background-color: #E8E8E8;
+}
+
+
+.item i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+}
+
+#logout {
+    padding: 12px;
+}
+
+#logoutBtn {
+    display: flex;
+    justify-content: center;
+    margin-inline: auto;
+    width: 80%;
+    border: 0.1px solid #dedede;
+    padding: 12px;
+    font-size: 15px;
+    gap: 15px;
+    align-items: center;
+    border-radius: 8px;
+    text-align: start;
+    cursor: pointer;
+    background-color: #CD2828;
+    color: #DEDEDE;
+    box-shadow: 2px 2px 10px 0px rgb(0, 0, 0);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding-left: 240px;
+    width: 100%;
+    height: 55px;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: x-large;
+    font-weight: bold;
+    transition: padding-left 0.3s ease;
+}
+
+header.top {
+    padding-left: 0;
+}
+
+.menu {
+    margin: 20px 28px 20px 30px;
+    font-size: 27px;
+    color: black;
+}
+
+

@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    padding-left: 240px;
+    transition: padding-left 0.3s ease;
+}
+
+main.top {
+    padding-left: 0;
+}
+
+.editora {
+    margin-top: 27px; 
+}
+
+.editora a {
+    color: white;
+    font-weight: 700;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    padding: 9px 40px;
+    background-color: #006666;
+    text-decoration: none; 
+    border-radius: 5px;
+    margin-bottom: 27px;
+    text-align: center; 
+}
+
+input {
+    padding-left: 16px;
+    font-size: 16px;
+    font-weight: 800;
+    color: rgba(0,0,0,0.60);
+}
+
+.pesquisa{
+    display: flex;
+    width: 887px;
+    height: 36px;
+    border-radius: 4px;
+}
+.selecao {
+    width: 100%;
+    background: rgba(255,255,255,0.7);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: 800;
+    color: rgba(0,0,0,0.60);
+    border: 2px solid black;
+}
+
+.pesquisa{
+    display: flex;
+    width: 887px;
+    height: 36px;
+    border-radius: 4px;
+}
+
+.button-pesquisar {
+    width: 154px;
+    height: 36px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: #006666;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+#list {
+    width:887px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 6px;
+    overflow: hidden;
+    margin-left: -175px;
+}
+
+.opcao {
+    width: 100%;
+    padding: 15px;
+    list-style: none;
+    cursor: pointer;
+    left: 25px;
+}
+
+.opcao:hover {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.hide {
+    visibility: hidden;
+}
+
+    

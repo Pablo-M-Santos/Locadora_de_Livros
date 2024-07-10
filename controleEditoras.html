@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="shortcut icon" href="assets/imagens/favicon.png" type="image/x-icon">
+    <title>Locadora de Livros | Editoras</title>
+    <link rel="stylesheet" href="assets/css/sidebarMenu.css">
+    <link rel="stylesheet" href="assets/css/editora.css">
+</head>
+
+<body>
+    <!-- Menu Lateral -->
+    <nav class="sidebar">
+        <div id="container">
+            <!-- Logo -->
+            <img class="logo" src="assets/imagens/logo.png" alt="Logo WDA">
+            <!-- Itens -->
+            <ul id="itens">
+                <a href="#">
+                    <li class="item">
+                        <i class="fa-solid fa-house"></i>
+                        <span class="itemDescription">
+                            Página Inicial
+                        </span>
+                    </li>
+                </a>
+
+                <a href="controleEditoras.html">
+                    <li class="item active-item">
+                        <i class="fa-solid fa-pencil"></i>
+                        <span class="itemDescription">
+                            Controle de Editoras
+                        </span>
+                    </li>
+                </a>
+
+                <a href="controleLivros.html">
+                    <li class="item">
+                        <i class="fa-solid fa-book"></i>
+                        <span class="itemDescription">
+                            Controle de Livros
+                        </span>
+                    </li>
+                </a>
+
+                <a href="controleLocatario.html">
+                    <li class="item">
+                        <i class="fa-solid fa-user"></i>
+                        <span class="itemDescription">
+                            Controle Locatário
+                        </span>
+                    </li>
+                </a>
+
+                <a href="controleAluguel.html">
+                    <li class="item">
+                        <i class="fa-solid fa-book-open"></i>
+                        <span class="itemDescription">
+                            Controle de Aluguel
+                        </span>
+                    </li>
+                </a>
+
+                <a href="controleUsuario.html">
+                    <li class="item">
+                        <i class="fa-solid fa-gears"></i>
+                        <span class="itemDescription">
+                            Controle de Usuário
+                        </span>
+                    </li>
+                </a>
+            </ul>
+
+        </div>
+
+        <a href="login.html">
+            <li class="item">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span class="itemDescription">
+                    Logout
+                </span>
+            </li>
+        </a>
+    </nav>
+
+    <!-- Menu superior -->
+    <header>
+        <a class="menu" href="#">
+            <i class="fa-solid fa-bars" id="menuBtn"></i>
+        </a>
+        Controle de Editoras
+    </header>
+
+    <main>
+        <div class="editora">
+            <a href="#">CADASTRAR EDITORA</a>
+        </div>
+
+        <div class="container">
+            <div class="pesquisa">
+                <div id="barraPesquisa">
+                    <input class="pesquisa" type="text" placeholder="Nome da Editora">
+                </div>
+            </div>
+            <button class="button-pesquisar">PESQUISAR</button>
+        </div>
+
+        <div class="tabela">
+            <table>
+                <tr>
+                    <th>Código</th>
+                    <th>Nome da Editora</th>
+                    <th>Telefone</th>
+                    <th>Email</th>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <script src="assets/javascript/script.js"></script>
+</body>
+
+</html>
