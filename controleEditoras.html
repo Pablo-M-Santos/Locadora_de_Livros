@@ -99,29 +99,63 @@
     <!-- Corpo -->
     <main>
 
-        <!-- Cadastro de Editora -->
+        <!-- Modais -->
+         
+        <!-- Button cadastrar Editora -->
         <div class="editora">
-            <a id="open-modal">CADASTRAR EDITORA</a>
+            <a id="open-modal1">CADASTRAR EDITORA</a>
+        </div>
 
-            <!-- Modal -->
-            <div id="fade" class="hide"></div>
-            <div id="modal" class="hide">
-                <div class="modal-header">
-                    <h2>Cadastro de Editora</h2>
-                    <i id="close-modal" class="fa-solid fa-xmark"></i>
-                </div>
+         <!-- Cadastro de Editora -->
+        <div id="fade1" class="hide"></div>
+        <div id="modal1" class="hide">
+            <div class="modal-header">
+                <h2>Cadastro de Editora</h2>
+                <i id="close-modal1" class="fa-solid fa-xmark"></i>
+            </div>
 
-                <div class="modal-body">
-                    <form action="controleEditoras.html">
-                        <input type="text">
-                        <input type="text">
-                        <input type="text">
-                        <input type="text">
-                    </form>
+            <div class="modal-body">
+                <form action="controleEditoras.html">
+                    <input type="text" id="placeholder" placeholder="Nome da Editora" required>
+                    <input type="email" id="placeholder" placeholder="Email" required>
+                    <input type="number" id="placeholder" placeholder="Telefone" required>
+                    <input type="text" id="placeholder" placeholder="Site">
                     <button type="submit">CADASTRAR</button>
-                </div>
+                </form>
             </div>
         </div>
+
+        <!-- Editar Editora -->
+        <div id="fade2" class="hide"></div>
+        <div id="modal2" class="hide">
+            <div class="modal-header">
+                <h2>Editar de Editora</h2>
+                <i id="close-modal2" class="fa-solid fa-xmark"></i>
+            </div>
+
+            <div class="modal-body">
+                <form action="controleEditoras.html">
+                    <input type="text" id="placeholder" placeholder="Nome da Editora" required>
+                    <input type="email" id="placeholder" placeholder="Email" required>
+                    <input type="number" id="placeholder" placeholder="Telefone" required>
+                    <input type="text" id="placeholder" placeholder="Site">
+                    <button type="submit">SALVAR</button>
+                </form>
+            </div>
+        </div>
+
+         <!-- Excluir Editora -->
+         <div id="fade3" class="hide"></div>
+         <div id="modal3" class="hide">
+            <div class="circulo">
+                <i id="close-modal3" class="fa-solid fa-exclamation"></i>
+            </div>
+            <div class="modal-body3">
+                <h3>Tem certeza que deseja excluir ?</h3>
+                <button>SIM</button>
+                <button>NÃO</button>
+            </div>            
+         </div>
 
         <!-- Barra de pesquisa -->
         <div class="container">
@@ -148,8 +182,8 @@
                     <td>(85) 9 8785-8860</td>
                     <td>pablo@gmail.com</td>
                     <td class="acoes">
-                        <i class="fa-regular fa-pen-to-square"></i>
-                        <i class="fa-regular fa-trash-can"></i>
+                        <i id="open-modal2" class="fa-regular fa-pen-to-square"></i>
+                        <i id="open-modal3" class="fa-regular fa-trash-can"></i>
                     </td>
                 </tr>
 
@@ -169,8 +203,8 @@
                     <td>(85) 9 8785-8860</td>
                     <td>pablo@gmail.com</td>
                     <td class="acoes">
-                        <i class="fa-regular fa-pen-to-square"></i>
-                        <i class="fa-regular fa-trash-can"></i>
+                        <i id="open-modal2" class="fa-regular fa-pen-to-square"></i>
+                        <i id="open-modal3" class="fa-regular fa-trash-can"></i>
                     </td>
                 </tr>
 
@@ -190,8 +224,8 @@
                     <td>(85) 9 8785-8860</td>
                     <td>pablo@gmail.com</td>
                     <td class="acoes">
-                        <i class="fa-regular fa-pen-to-square"></i>
-                        <i class="fa-regular fa-trash-can"></i>
+                        <i id="open-modal2" class="fa-regular fa-pen-to-square"></i>
+                        <i id="open-modal3" class="fa-regular fa-trash-can"></i>
                     </td>
                 </tr>
 
@@ -211,8 +245,8 @@
                     <td>(85) 9 8785-8860</td>
                     <td>pablo@gmail.com</td>
                     <td class="acoes">
-                        <i class="fa-regular fa-pen-to-square"></i>
-                        <i class="fa-regular fa-trash-can"></i>
+                        <i id="open-modal2" class="fa-regular fa-pen-to-square"></i>
+                        <i id="open-modal3" class="fa-regular fa-trash-can"></i>
                     </td>
                 </tr>
 
@@ -227,13 +261,13 @@
                     <th>Email</th>
                 </tr>
                 <tr>
-                    <td>4</td>
+                    <td>5</td>
                     <td>Companhia das Letras</td>
                     <td>(85) 9 8785-8860</td>
                     <td>pablo@gmail.com</td>
                     <td class="acoes">
-                        <i class="fa-regular fa-pen-to-square"></i>
-                        <i class="fa-regular fa-trash-can"></i>
+                        <i id="open-modal2" class="fa-regular fa-pen-to-square"></i>
+                        <i id="open-modal3" class="fa-regular fa-trash-can"></i>
                     </td>
                 </tr>
 

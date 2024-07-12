@@ -111,23 +111,26 @@ th {
 }
 
 
-/* Modal */
-#modal button {
-    padding: .6rem 1.2rem;
-    background-color: #888;
-    color: #fff;
+/* Modal1 */
+#modal1 button {
+    width: 232px;
+    height: 69px;
+    background-color: #FFFFFF;
+    font-weight: 800;
+    color: #000;
     border: none;
     border-radius: .25rem;
     cursor: pointer;
     opacity: .9;
-    font-size: 1rem;
+    font-size: 18px;
+    border-radius: 30px;
 }
 
-#modal button:hover {
+#modal1 button:hover {
     opacity: 1;
 }
 
-#fade {
+#fade1 {
     position: fixed;
     top: 0;
     left: 0;
@@ -138,21 +141,37 @@ th {
 }
 
 
-#modal {
+#modal1 {
     position: fixed;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 500px;
-    max-width: 90%;
-    background-color: #fff;
+    width: 690px;
+    height: 532px;
+    background-color: #006666;
     padding: 1.2rem;
     border-radius: 0.5rem;
     z-index: 10;
 }
 
-#fade,
-#modal {
+#placeholder::placeholder {
+    font-family: 'Popins', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+input {
+    font-family: 'Popins', sans-serif;
+    font-weight: 800;
+    color: #00000099;
+    width: 517px;
+    height: 49px;
+    border-radius: 16px;
+}
+
+#fade1,
+#modal1 {
     transition: 0.5s;
     opacity: 1;
     pointer-events: all;
@@ -162,35 +181,223 @@ th {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 1rem;
 }
 
 .modal-header h2 {
     flex-grow: 1;
     text-align: center;
+    font-weight: 800;
+    font-size: 32px;
+}
+
+.modal-header h2 {
+    color: rgb(255, 255, 255);
 }
 
 .modal-header i {
-    font-size: 30px;
+    color: white;
+    font-size: 40px;
     cursor: pointer;
 }
 
-.modal-body, form {
+.modal-body,
+form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
+    gap: 30px;
+    border-radius: 20px;
+    font-family: 'Popins', sans-serif;
+    font-weight: 800;
 }
+
 .modal-body p {
     margin-bottom: 1rem;
 }
 
-#modal.hide,
-#fade.hide {
+#modal1.hide,
+#fade1.hide {
     opacity: 0;
     pointer-events: none;
 }
 
-#modal.hide {
+#modal1.hide {
     top: 0;
+}
+
+
+/* Modal2 */
+#modal2 button {
+    width: 232px;
+    height: 69px;
+    background-color: #FFFFFF;
+    font-weight: 800;
+    color: #000;
+    border: none;
+    border-radius: .25rem;
+    cursor: pointer;
+    opacity: .9;
+    font-size: 18px;
+    border-radius: 30px;
+}
+
+#modal2 button:hover {
+    opacity: 1;
+}
+
+#fade2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 5;
+}
+
+
+#modal2 {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 690px;
+    height: 532px;
+    background-color: #006666;
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+    z-index: 10;
+}
+
+#placeholder::placeholder {
+    font-family: 'Popins', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+input {
+    font-family: 'Popins', sans-serif;
+    font-weight: 800;
+    color: #00000099;
+    width: 517px;
+    height: 49px;
+    border-radius: 16px;
+}
+
+#fade2,
+#modal2 {
+    transition: 0.5s;
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-header h2 {
+    flex-grow: 1;
+    text-align: center;
+    font-weight: 800;
+    font-size: 32px;
+}
+
+.modal-header h2 {
+    color: rgb(255, 255, 255);
+}
+
+.modal-header i {
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.modal-body,
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 30px;
+    border-radius: 20px;
+    font-family: 'Popins', sans-serif;
+    font-weight: 800;
+}
+
+.modal-body p {
+    margin-bottom: 1rem;
+}
+
+#modal2.hide,
+#fade2.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#modal2.hide {
+    top: 0;
+}
+
+
+
+
+/* Modal3 */
+#fade3 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 5;
+}
+
+
+#modal3 {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 690px;
+    height: 400px;
+    background-color: #006666;
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+    z-index: 10;
+
+}
+
+#fade3,
+#modal3 {
+    transition: 0.5s;
+    opacity: 1;
+    pointer-events: all;
+}
+
+#modal3.hide,
+#fade3.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#modal3.hide {
+    top: 0;
+}
+
+.circulo {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: red;
 }
