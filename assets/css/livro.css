@@ -18,12 +18,11 @@ main.top {
     padding-left: 0;
 }
 
-
-.editora {
+.livro {
     margin-top: 8px;
 }
 
-.editora a {
+.livro a {
     color: white;
     font-weight: 700;
     display: inline-block;
@@ -31,6 +30,7 @@ main.top {
     justify-content: center;
     padding: 9px 40px;
     background-color: #006666;
+    cursor: pointer;
     text-decoration: none;
     border-radius: 5px;
     margin-bottom: 12px;
@@ -107,4 +107,339 @@ th {
 
 .acoes i {
     cursor: pointer;
+}
+
+
+/* Modal1 */
+#modal1 button {
+    width: 232px;
+    height: 69px;
+    background-color: #FFFFFF;
+    font-weight: 800;
+    color: #000;
+    border: none;
+    border-radius: .25rem;
+    cursor: pointer;
+    opacity: .9;
+    font-size: 18px;
+    border-radius: 30px;
+}
+
+#modal1 button:hover {
+    opacity: 1;
+}
+
+#fade1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 5;
+}
+
+
+#modal1 {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 691px;
+    height: 586px;
+    background-color: #006666;
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+    z-index: 10;
+}
+
+#placeholder::placeholder {
+    font-family: 'Popins', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+input {
+    font-family: 'Popins', sans-serif;
+    font-weight: 800;
+    color: #00000099;
+    width: 517px;
+    height: 49px;
+    border-radius: 16px;
+}
+
+#fade1,
+#modal1 {
+    transition: 0.5s;
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-header h2 {
+    flex-grow: 1;
+    text-align: center;
+    font-weight: 800;
+    font-size: 32px;
+}
+
+.modal-header h2 {
+    color: rgb(255, 255, 255);
+}
+
+.modal-header i {
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.modal-body,
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 30px;
+    border-radius: 20px;
+    font-family: 'Popins', sans-serif;
+    font-weight: 800;
+}
+
+.modal-body p {
+    margin-bottom: 1rem;
+}
+
+#modal1.hide,
+#fade1.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#modal1.hide {
+    top: 0;
+}
+
+
+/* Modal2 */
+#modal2 button {
+    width: 232px;
+    height: 69px;
+    background-color: #FFFFFF;
+    font-weight: 800;
+    color: #000;
+    border: none;
+    border-radius: .25rem;
+    cursor: pointer;
+    opacity: .9;
+    font-size: 18px;
+    border-radius: 30px;
+}
+
+#modal2 button:hover {
+    opacity: 1;
+}
+
+#fade2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 5;
+}
+
+
+#modal2 {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 691px;
+    height: 586px;
+    background-color: #006666;
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+    z-index: 10;
+}
+
+#placeholder::placeholder {
+    font-family: 'Popins', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+input {
+    font-family: 'Popins', sans-serif;
+    font-weight: 800;
+    color: #00000099;
+    width: 517px;
+    height: 49px;
+    border-radius: 16px;
+}
+
+#fade2,
+#modal2 {
+    transition: 0.5s;
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-header h2 {
+    flex-grow: 1;
+    text-align: center;
+    font-weight: 800;
+    font-size: 32px;
+}
+
+.modal-header h2 {
+    color: rgb(255, 255, 255);
+}
+
+.modal-header i {
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.modal-body,
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 30px;
+    border-radius: 20px;
+    font-family: 'Popins', sans-serif;
+    font-weight: 800;
+}
+
+.modal-body p {
+    margin-bottom: 1rem;
+}
+
+#modal2.hide,
+#fade2.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#modal2.hide {
+    top: 0;
+}
+
+
+
+
+/* Modal3 */
+#fade3 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 5;
+}
+
+#modal3 {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 690px;
+    height: 400px;
+    background-color: #006666;
+    padding: 1.2rem;
+    border-radius: 20px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.modal-body3 {
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    text-align: center; 
+}
+
+#fade3,
+#modal3 {
+    transition: 0.5s;
+    opacity: 1;
+    pointer-events: all;
+}
+
+#modal3.hide,
+#fade3.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#modal3.hide {
+    top: 0;
+}
+
+.modal-body3 h3 {
+    font-size: 25px;
+    color: white;
+    font-size: 800;
+    margin-bottom: 56px;
+}
+
+.circulo {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: red;
+    position: absolute;
+    top: 15px; 
+    left: 15px; 
+}
+
+.button-container {
+    display: flex;
+    gap: 50px; 
+}
+
+button {
+    width: 100px; 
+    height: 50px;
+    background-color: #FFFFFF;
+    font-weight: 800;
+    color: #000;
+    border: none;
+    border-radius: .25rem;
+    cursor: pointer;
+    opacity: .9;
+    font-size: 23px;
+    border-radius: 10px;
+}
+
+button:hover {
+    opacity: 1;
 }

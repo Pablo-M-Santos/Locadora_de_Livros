@@ -97,129 +97,220 @@
         Controle de Usuário
     </header>
 
-    <main>
-        <div class="editora">
-            <a href="#">CADASTRAR USUÁRIO</a>
+   <!-- Corpo -->
+   <main>
+
+    <!-- Modais -->
+     
+    <!-- Button cadastrar Editora -->
+    <div class="usuario">
+        <a class="open-modal1">CADASTRAR USUÁRIO</a>
+    </div>
+
+     <!-- Cadastro de Editora -->
+    <div id="fade1" class="hide"></div>
+    <div id="modal1" class="hide">
+        <div class="modal-header">
+            <h2>Cadastro de Usuário</h2>
+            <i class="fa-solid fa-xmark close-modal1"></i>
         </div>
 
-        <div class="container">
-            <div class="pesquisa">
-                <div id="barraPesquisa">
-                    <input class="pesquisa" type="text" placeholder="Nome da Editora">
+        <div class="modal-body">
+            <form action="controleEditoras.html">
+                <input type="text" id="placeholder" placeholder="Nome" required>
+                <input type="email" id="placeholder" placeholder="Email" required>
+                <input type="password" id="placeholder" placeholder="Senha" required>
+                <div class="checkbox">
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="editorCheckbox" name="tipo" value="editor">
+                        <label for="editorCheckbox">Editor</label>
+                    </div>
+                    
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="leitorCheckbox" name="tipo" value="leitor">
+                        <label for="leitorCheckbox">Leitor</label>
+                    </div>
                 </div>
+                <button type="submit">CADASTRAR</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Editar Editora -->
+    <div id="fade2" class="hide"></div>
+    <div id="modal2" class="hide">
+        <div class="modal-header">
+            <h2>Editar Usuário</h2>
+            <i class="fa-solid fa-xmark close-modal2"></i>
+        </div>
+
+        <div class="modal-body">
+            <form action="controleEditoras.html">
+                <input type="text" id="placeholder" placeholder="Nome" required>
+                <input type="email" id="placeholder" placeholder="Email" required>
+                <input type="password" id="placeholder" placeholder="Senha" required>
+                <div class="checkbox">
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="editorCheckbox" name="tipo" value="editor">
+                        <label for="editorCheckbox">Editor</label>
+                    </div>
+                    
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="leitorCheckbox" name="tipo" value="leitor">
+                        <label for="leitorCheckbox">Leitor</label>
+                    </div>
+                </div>
+                <button type="submit">SALVAR</button>
+            </form>
+        </div>
+    </div>
+
+     <!-- Excluir Editora -->
+     <div id="fade3" class="hide"></div>
+     <div id="modal3" class="hide">
+        <div class="circulo">
+            <i class="fa-solid fa-exclamation"></i>
+        </div>
+        <div class="modal-body3">
+            <h3>Tem certeza que deseja excluir ?</h3>
+            <div class="button-container">
+                <button id="sim">SIM</button>
+                <button id="nao">NÃO</button>
             </div>
-            <button class="button-pesquisar">PESQUISAR</button>
+        </div>            
+     </div>
+
+    <!-- Barra de pesquisa -->
+    <div class="container">
+        <div class="pesquisa">
+            <div id="barraPesquisa">
+                <input class="pesquisa" type="text" placeholder="Nome do Usuário">
+            </div>
         </div>
+        <button class="button-pesquisar">PESQUISAR</button>
+    </div>
 
-        <!-- Tabelas -->
-        <div class="container-table">
-            <table>
-                <tr class="tabela">
-                    <th>Código</th>
-                    <th>Nome da Editora</th>
-                    <th>Telefone</th>
-                    <th>Email</th>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Companhia das Letras</td>
-                    <td>(85) 9 8785-8860</td>
-                    <td>pablo@gmail.com</td>
-                    <td class="acoes">
-                        <i class="fa-regular fa-pen-to-square"></i>
-                        <i class="fa-regular fa-trash-can"></i>
-                    </td>
-                </tr>
+    <!-- Tabelas -->
+    <div class="container-table">
+        <table>
+            <tr class="tabela">
+                <th>Código</th>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Senha</th>
+                <th>Nivel de Permissão</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Pablo Moreira Santos</td>
+                <td>pablo@gmail.com</td>
+                <td>123456789</td>
+                <td>Leitor</td>
+                <td class="acoes">
+                    <i class="fa-regular fa-pen-to-square open-modal2"></i>
+                    <i class="fa-regular fa-trash-can open-modal3"></i>
+                </td>
+            </tr>
 
-                <br>
-            </table>
+            <br>
+        </table>
 
-            <table>
-                <tr class="tabela">
-                    <th>Código</th>
-                    <th>Nome da Editora</th>
-                    <th>Telefone</th>
-                    <th>Email</th>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Companhia das Letras</td>
-                    <td>(85) 9 8785-8860</td>
-                    <td>pablo@gmail.com</td>
-                    <td class="acoes">
-                        <i class="fa-regular fa-pen-to-square"></i>
-                        <i class="fa-regular fa-trash-can"></i>
-                    </td>
-                </tr>
+        <table>
+            <tr class="tabela">
+                <th>Código</th>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Senha</th>
+                <th>Nivel de Permissão</th>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Pablo Moreira Santos</td>
+                <td>pablo@gmail.com</td>
+                <td>123456789</td>
+                <td>Leitor</td>
+                <td class="acoes">
+                    <i class="fa-regular fa-pen-to-square open-modal2"></i>
+                    <i class="fa-regular fa-trash-can open-modal3"></i>
+                </td>
+            </tr>
 
-                <br>
-            </table>
+            <br>
+        </table>
 
-            <table>
-                <tr class="tabela">
-                    <th>Código</th>
-                    <th>Nome da Editora</th>
-                    <th>Telefone</th>
-                    <th>Email</th>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Companhia das Letras</td>
-                    <td>(85) 9 8785-8860</td>
-                    <td>pablo@gmail.com</td>
-                    <td class="acoes">
-                        <i class="fa-regular fa-pen-to-square"></i>
-                        <i class="fa-regular fa-trash-can"></i>
-                    </td>
-                </tr>
+        <table>
+            <tr class="tabela">
+                <th>Código</th>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Senha</th>
+                <th>Nivel de Permissão</th>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Pablo Moreira Santos</td>
+                <td>pablo@gmail.com</td>
+                <td>123456789</td>
+                <td>Leitor</td>
+                <td class="acoes">
+                    <i class="fa-regular fa-pen-to-square open-modal2"></i>
+                    <i class="fa-regular fa-trash-can open-modal3"></i>
+                </td>
+            </tr>
 
-                <br>
-            </table>
+            <br>
+        </table>
 
-            <table>
-                <tr class="tabela">
-                    <th>Código</th>
-                    <th>Nome da Editora</th>
-                    <th>Telefone</th>
-                    <th>Email</th>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>Companhia das Letras</td>
-                    <td>(85) 9 8785-8860</td>
-                    <td>pablo@gmail.com</td>
-                    <td class="acoes">
-                        <i class="fa-regular fa-pen-to-square"></i>
-                        <i class="fa-regular fa-trash-can"></i>
-                    </td>
-                </tr>
+        <table>
+            <tr class="tabela">
+                <th>Código</th>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Senha</th>
+                <th>Nivel de Permissão</th>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Pablo Moreira Santos</td>
+                <td>pablo@gmail.com</td>
+                <td>123456789</td>
+                <td>Leitor</td>
+                <td class="acoes">
+                    <i class="fa-regular fa-pen-to-square open-modal2"></i>
+                    <i class="fa-regular fa-trash-can open-modal3"></i>
+                </td>
+            </tr>
 
-                <br>
-            </table>
+            <br>
+        </table>
 
-            <table>
-                <tr class="tabela">
-                    <th>Código</th>
-                    <th>Nome da Editora</th>
-                    <th>Telefone</th>
-                    <th>Email</th>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>Companhia das Letras</td>
-                    <td>(85) 9 8785-8860</td>
-                    <td>pablo@gmail.com</td>
-                    <td class="acoes">
-                        <i class="fa-regular fa-pen-to-square"></i>
-                        <i class="fa-regular fa-trash-can"></i>
-                    </td>
-                </tr>
+        <table>
+            <tr class="tabela">
+                <th>Código</th>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Senha</th>
+                <th>Nivel de Permissão</th>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Pablo Moreira Santos</td>
+                <td>pablo@gmail.com</td>
+                <td>123456789</td>
+                <td>Leitor</td>
+                <td class="acoes">
+                    <i class="fa-regular fa-pen-to-square open-modal2"></i>
+                    <i class="fa-regular fa-trash-can open-modal3"></i>
+                </td>
+            </tr>
 
-                <br>
-            </table>
-        </div>
-    </main>
-    <script src="assets/javascript/script.js"></script>
+            <br>
+        </table>
+
+    </div>
+</main>
+<script src="assets/javascript/script.js"></script>
+<script src="assets/javascript/modais.js"></script>
 </body>
 
 </html>
