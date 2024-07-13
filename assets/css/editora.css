@@ -358,7 +358,6 @@ form {
     z-index: 5;
 }
 
-
 #modal3 {
     position: fixed;
     left: 50%;
@@ -368,9 +367,20 @@ form {
     height: 400px;
     background-color: #006666;
     padding: 1.2rem;
-    border-radius: 0.5rem;
+    border-radius: 20px;
     z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
 
+.modal-body3 {
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    text-align: center; 
 }
 
 #fade3,
@@ -390,6 +400,13 @@ form {
     top: 0;
 }
 
+.modal-body3 h3 {
+    font-size: 25px;
+    color: white;
+    font-size: 800;
+    margin-bottom: 56px;
+}
+
 .circulo {
     width: 50px;
     height: 50px;
@@ -400,4 +417,30 @@ form {
     align-items: center;
     font-size: 30px;
     color: red;
+    position: absolute;
+    top: 15px; 
+    left: 15px; 
+}
+
+.button-container {
+    display: flex;
+    gap: 50px; 
+}
+
+button {
+    width: 100px; 
+    height: 50px;
+    background-color: #FFFFFF;
+    font-weight: 800;
+    color: #000;
+    border: none;
+    border-radius: .25rem;
+    cursor: pointer;
+    opacity: .9;
+    font-size: 23px;
+    border-radius: 10px;
+}
+
+button:hover {
+    opacity: 1;
 }
