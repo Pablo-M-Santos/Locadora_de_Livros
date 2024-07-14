@@ -1,10 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
@@ -475,4 +468,52 @@ button:hover {
     font-weight: 800;
     color: white;
     margin-left: 8px;
+}
+.chevron{
+    background-color: #00000000;
+    border: none;
+    cursor: pointer;
+}
+
+.paginacao{
+    display: flex;
+    align-items: center;
+    margin-inline: auto;
+    gap: 1rem;
+    margin-top: 10px;
+}
+
+.item-paginacao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 200;
+    width: 36px;
+    height: 36px;
+    box-shadow: 3px 4px 10px 0px rgba(0, 0, 0, 0.60);
+    cursor: pointer;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+}
+
+.item-paginacao.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.paginacao i {
+    padding: 10px 11.75px 10px 12.84px;
+    background-color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #C4CDD5;
+}
+
+.paginacao i:hover {
+    color: black;
 }

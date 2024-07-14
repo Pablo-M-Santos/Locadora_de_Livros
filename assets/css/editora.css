@@ -444,3 +444,104 @@ button {
 button:hover {
     opacity: 1;
 }
+
+.chevron{
+    background-color: #00000000;
+    border: none;
+    cursor: pointer;
+}
+
+.paginacao{
+    display: flex;
+    align-items: center;
+    margin-inline: auto;
+    gap: 1rem;
+    margin-top: 10px;
+}
+
+.item-paginacao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 200;
+    width: 36px;
+    height: 36px;
+    box-shadow: 3px 4px 10px 0px rgba(0, 0, 0, 0.60);
+    cursor: pointer;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+}
+
+.item-paginacao.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.paginacao i {
+    padding: 10px 11.75px 10px 12.84px;
+    background-color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #C4CDD5;
+}
+
+.paginacao i:hover {
+    color: black;
+}
+
+@media (max-width: 1350px) {
+    .pesquisa {
+        width: 650px;
+    }
+    
+    .button-pesquisar {
+        width: 120px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .pesquisa {
+        width: 550px;
+    }
+}
+
+@media (max-width: 950px) {
+    .pesquisa {
+        width: 450px;
+    }
+
+    .button-pesquisar {
+        font-size: 14px;
+    }
+
+    .editora a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 850px) {
+      .container button {
+        display: none;
+    }
+}
+
+@media (max-width: 700px) {
+    .pesquisa {
+        width: 350px;
+    }
+    .item-paginacao{
+        width: 30px;
+        height: 30px;
+    }
+    .paginacao i {
+        padding: 7px 9.75px 7px 10.84px;
+    }
+    .sidebar.active + .pesquisa {
+        width: 500px;
+    }
+}

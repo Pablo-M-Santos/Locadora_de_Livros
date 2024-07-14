@@ -10,6 +10,9 @@ const texto = document.getElementById("texto");
 const opcoes = document.querySelectorAll(".opcao");
 const list = document.getElementById("list");
 const inputContainer = document.getElementById("inputContainer");
+const paginacaoItems = document.querySelectorAll('.item-paginacao');
+const prevButton = document.getElementById('prev');
+const nextButton = document.getElementById('next');
 
 // Função para alternar a visibilidade do sidebar
 menuBtn.onclick = function () {
@@ -53,4 +56,27 @@ if (subMenu) {
 
   // Inicialmente, esconde o sub-menu
   subMenu.style.display = 'none';
+}
+
+prevButton.addEventListener('click', function () {
+  changePage(-1);
+});
+
+nextButton.addEventListener('click', function () {
+  changePage(1);
+});
+
+function changePage(direction) {
+  const activeItem = document.querySelector('.item-paginacao.active');
+  let currentIndex = Array.from(paginacaoItems).indexOf(activeItem);
+  let newIndex = currentIndex + direction;
+
+  if (newIndex < 0) {
+    newIndex = paginacaoItems.length - 1;
+  } else if (newIndex >= paginacaoItems.length) {
+    newIndex = 0;
+  }
+
+  activeItem.classList.remove('active');
+  paginacaoItems[newIndex].classList.add('active');
 }

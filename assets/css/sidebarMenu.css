@@ -121,4 +121,38 @@ header.top {
     color: black;
 }
 
+/* Responsividade Menu lateral e superior */
+@media (max-width: 600px) {
+    header {
+        font-size: 0px; 
+        padding-left: 230px;
+    }
+    .menu {
+        margin: auto 15px;
+    }
+    .sidebar.active + header {
+        font-size: 25px;
+    }
+    .item {
+        padding: 13px 0px 12px 12px;
+    }
+    .sidebar {
+        max-width: 230px;
+    }
+}
 
+@media (max-width: 400px) {
+    .sidebar.active + header {
+        font-size: 20px;
+    }
+    .sidebar {
+        font-size: 14px;
+        max-width: 210px;
+    }
+    img {
+        width: 95px;
+    }
+    header {
+        padding-left: 210px;
+    }
+} 
