@@ -97,125 +97,272 @@
         Controle de Locatário
     </header>
 
+    <!-- Corpo -->
     <main>
-        <div class="editora">
-            <a href="#">CADASTRAR LOCATÁRIO</a>
+
+        <!-- Modais -->
+
+        <!-- Button cadastrar Locatário-->
+        <div class="locatario">
+            <a class="open-modal1">CADASTRAR LOCATÁRIO</a>
         </div>
 
+        <!-- Cadastro de Locatário -->
+        <div id="fade1" class="hide"></div>
+        <div id="modal1" class="hide">
+            <div class="modal-header">
+                <h2>Cadastro de Locatário</h2>
+                <i class="fa-solid fa-xmark close-modal1"></i>
+            </div>
+
+            <div class="modal-body">
+                <form class="formulario">
+                    <div class="columns">
+                        <div class="column">
+                            <input type="text" id="nome" placeholder="Nome" required>
+                            <input type="number" id="celular" placeholder="Celular" required>
+                            <input type="text" id="bairro" placeholder="Bairro" required>
+                        </div>
+                        <div class="column">
+                            <input type="email" id="email" placeholder="Email" required>
+                            <input type="text" id="cidade" placeholder="Cidade" required>
+                            <div class="row">
+                                <input type="number" id="numero" placeholder="Numero" required>
+                                <input type="text" id="uf" placeholder="UF" required>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="text" id="logadouro" placeholder="Logadouro" required>
+                    <input type="number" id="cpf" placeholder="CPF" required>
+                    <button type="submit">CADASTRAR</button>
+                </form>
+
+            </div>
+        </div>
+
+        <!-- Editar Locatário -->
+        <div id="fade2" class="hide"></div>
+        <div id="modal2" class="hide">
+            <div class="modal-header">
+                <h2>Editar Locatário</h2>
+                <i class="fa-solid fa-xmark close-modal2"></i>
+            </div>
+
+            <div class="modal-body">
+                <form class="formulario">
+                    <div class="columns">
+                        <div class="column">
+                            <input type="text" id="nome" placeholder="Nome" required>
+                            <input type="number" id="celular" placeholder="Celular" required>
+                            <input type="text" id="bairro" placeholder="Bairro" required>
+                        </div>
+                        <div class="column">
+                            <input type="email" id="email" placeholder="Email" required>
+                            <input type="text" id="cidade" placeholder="Cidade" required>
+                            <div class="row">
+                                <input type="number" id="numero" placeholder="Numero" required>
+                                <input type="text" id="uf" placeholder="UF" required>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="text" id="logadouro" placeholder="Logadouro" required>
+                    <input type="number" id="cpf" placeholder="CPF" required>
+                    <button type="submit">CADASTRAR</button>
+                </form>
+
+            </div>
+        </div>
+
+        <!-- Excluir Locatário -->
+        <div id="fade3" class="hide"></div>
+        <div id="modal3" class="hide">
+            <div class="circulo">
+                <i class="fa-solid fa-exclamation"></i>
+            </div>
+            <div class="modal-body3">
+                <h3>Tem certeza que deseja excluir ?</h3>
+                <div class="button-container">
+                    <button id="sim">SIM</button>
+                    <button id="nao">NÃO</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sobre Locatário -->
+        <div id="fade4" class="hide"></div>
+        <div id="modal4" class="hide">
+            <div class="modal-header4 sobre">
+                <h2 class="sobre">Sobre</h2>
+                <i class="fa-solid fa-xmark close-modal4"></i>
+            </div>
+
+            <div class="modal-body">
+                <table class="table-sobre">
+                    <tr class="tabela">
+                        <th>Código</th>
+                        <th>Nome</th>
+                        <th>Email</th>
+                        <th>Celular</th>
+                        <th>Cidade</th>
+                        <th>Bairro</th>
+                        <th>Número</th>
+                        <th>UF</th>
+                        <th>Logadouro</th>
+                        <th>CPF</th>
+                    </tr>
+                    <tr>
+                        <td data-cell="Codigo">1</td>
+                        <td data-cell="Nome">Pablo Moreira</td>
+                        <td data-cell="Email">pablo@gmail.com</td>
+                        <td data-cell="Celular">(85) 9 8785-8860</td>
+                        <td data-cell="Cidade">Brasília</td>
+                        <td data-cell="Bairro">Santa Maria</td>
+                        <td data-cell="Numero">036</td>
+                        <td data-cell="UF">DF</td>
+                        <td data-cell="Logadouro">Coronel Aurelio</td>
+                        <td data-cell="CPF">684.617.550-49</td>
+                    </tr>
+
+                    <br>
+                </table>
+
+            </div>
+        </div>
+
+        <!-- Barra de pesquisa -->
         <div class="container">
             <div class="pesquisa">
                 <div id="barraPesquisa">
-                    <input class="pesquisa" type="text" placeholder="Nome do Locatário">
+                    <input class="pesquisa" type="text" placeholder="Pesquisa do Locatário">
                 </div>
             </div>
             <button class="button-pesquisar">PESQUISAR</button>
         </div>
-
 
         <!-- Tabelas -->
         <div class="container-table">
             <table>
                 <tr class="tabela">
                     <th>Código</th>
-                    <th>Nome da Editora</th>
-                    <th>Telefone</th>
+                    <th>Nome</th>
                     <th>Email</th>
+                    <th>Celular</th>
+                    <th>Cidade</th>
+                    <th>Bairro</th>
                 </tr>
                 <tr>
-                    <td>1</td>
-                    <td>Companhia das Letras</td>
-                    <td>(85) 9 8785-8860</td>
-                    <td>pablo@gmail.com</td>
+                    <td data-cell="codigo">1</td>
+                    <td data-cell="nome">Pablo Moreira</td>
+                    <td data-cell="email">pablo@gmail.com</td>
+                    <td data-cell="celular">(85) 9 8785-8860</td>
+                    <td data-cell="cidade">Brasília</td>
+                    <td data-cell="bairro">Santa Maria</td>
                     <td class="acoes">
-                        <i class="fa-regular fa-pen-to-square"></i>
-                        <i class="fa-regular fa-trash-can"></i>
+                        <i class="fa-solid fa-magnifying-glass open-modal4"></i>
+                        <i class="fa-regular fa-pen-to-square open-modal2"></i>
+                        <i class="fa-regular fa-trash-can open-modal3"></i>
                     </td>
                 </tr>
-
                 <br>
             </table>
 
             <table>
                 <tr class="tabela">
                     <th>Código</th>
-                    <th>Nome da Editora</th>
-                    <th>Telefone</th>
+                    <th>Nome</th>
                     <th>Email</th>
+                    <th>Celular</th>
+                    <th>Cidade</th>
+                    <th>Bairro</th>
                 </tr>
                 <tr>
-                    <td>2</td>
-                    <td>Companhia das Letras</td>
-                    <td>(85) 9 8785-8860</td>
-                    <td>pablo@gmail.com</td>
+                    <td data-cell="codigo">2</td>
+                    <td data-cell="nome">Pablo Moreira</td>
+                    <td data-cell="email">pablo@gmail.com</td>
+                    <td data-cell="celular">(85) 9 8785-8860</td>
+                    <td data-cell="cidade">Brasília</td>
+                    <td data-cell="bairro">Santa Maria</td>
                     <td class="acoes">
-                        <i class="fa-regular fa-pen-to-square"></i>
-                        <i class="fa-regular fa-trash-can"></i>
+                        <i class="fa-solid fa-magnifying-glass open-modal4"></i>
+                        <i class="fa-regular fa-pen-to-square open-modal2"></i>
+                        <i class="fa-regular fa-trash-can open-modal3"></i>
                     </td>
                 </tr>
-
                 <br>
             </table>
 
             <table>
                 <tr class="tabela">
                     <th>Código</th>
-                    <th>Nome da Editora</th>
-                    <th>Telefone</th>
+                    <th>Nome</th>
                     <th>Email</th>
+                    <th>Celular</th>
+                    <th>Cidade</th>
+                    <th>Bairro</th>
                 </tr>
                 <tr>
-                    <td>3</td>
-                    <td>Companhia das Letras</td>
-                    <td>(85) 9 8785-8860</td>
-                    <td>pablo@gmail.com</td>
+                    <td data-cell="codigo">3</td>
+                    <td data-cell="nome">Pablo Moreira</td>
+                    <td data-cell="email">pablo@gmail.com</td>
+                    <td data-cell="celular">(85) 9 8785-8860</td>
+                    <td data-cell="cidade">Brasília</td>
+                    <td data-cell="bairro">Santa Maria</td>
                     <td class="acoes">
-                        <i class="fa-regular fa-pen-to-square"></i>
-                        <i class="fa-regular fa-trash-can"></i>
+                        <i class="fa-solid fa-magnifying-glass open-modal4"></i>
+                        <i class="fa-regular fa-pen-to-square open-modal2"></i>
+                        <i class="fa-regular fa-trash-can open-modal3"></i>
                     </td>
                 </tr>
-
                 <br>
             </table>
 
             <table>
                 <tr class="tabela">
                     <th>Código</th>
-                    <th>Nome da Editora</th>
-                    <th>Telefone</th>
+                    <th>Nome</th>
                     <th>Email</th>
+                    <th>Celular</th>
+                    <th>Cidade</th>
+                    <th>Bairro</th>
                 </tr>
                 <tr>
-                    <td>4</td>
-                    <td>Companhia das Letras</td>
-                    <td>(85) 9 8785-8860</td>
-                    <td>pablo@gmail.com</td>
+                    <td data-cell="codigo">4</td>
+                    <td data-cell="nome">Pablo Moreira</td>
+                    <td data-cell="email">pablo@gmail.com</td>
+                    <td data-cell="celular">(85) 9 8785-8860</td>
+                    <td data-cell="cidade">Brasília</td>
+                    <td data-cell="bairro">Santa Maria</td>
                     <td class="acoes">
-                        <i class="fa-regular fa-pen-to-square"></i>
-                        <i class="fa-regular fa-trash-can"></i>
+                        <i class="fa-solid fa-magnifying-glass open-modal4"></i>
+                        <i class="fa-regular fa-pen-to-square open-modal2"></i>
+                        <i class="fa-regular fa-trash-can open-modal3"></i>
                     </td>
                 </tr>
-
                 <br>
             </table>
 
             <table>
                 <tr class="tabela">
                     <th>Código</th>
-                    <th>Nome da Editora</th>
-                    <th>Telefone</th>
+                    <th>Nome</th>
                     <th>Email</th>
+                    <th>Celular</th>
+                    <th>Cidade</th>
+                    <th>Bairro</th>
                 </tr>
                 <tr>
-                    <td>4</td>
-                    <td>Companhia das Letras</td>
-                    <td>(85) 9 8785-8860</td>
-                    <td>pablo@gmail.com</td>
+                    <td data-cell="codigo">5</td>
+                    <td data-cell="nome">Pablo Moreira</td>
+                    <td data-cell="email">pablo@gmail.com</td>
+                    <td data-cell="celular">(85) 9 8785-8860</td>
+                    <td data-cell="cidade">Brasília</td>
+                    <td data-cell="bairro">Santa Maria</td>
                     <td class="acoes">
-                        <i class="fa-regular fa-pen-to-square"></i>
-                        <i class="fa-regular fa-trash-can"></i>
+                        <i class="fa-solid fa-magnifying-glass open-modal4"></i>
+                        <i class="fa-regular fa-pen-to-square open-modal2"></i>
+                        <i class="fa-regular fa-trash-can open-modal3"></i>
                     </td>
                 </tr>
-
                 <br>
             </table>
         </div>
@@ -229,6 +376,7 @@
         </div>
     </main>
     <script src="assets/javascript/script.js"></script>
+    <script src="assets/javascript/modais.js"></script>
 </body>
 
 </html>

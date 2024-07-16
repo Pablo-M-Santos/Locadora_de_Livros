@@ -98,14 +98,67 @@
     </header>
 
     <main>
+        <!-- Cadastro de Aluguel -->
+        <div id="fade1" class="hide"></div>
+        <div id="modal1" class="hide">
+            <div class="modal-header">
+                <h2>Cadastro de Aluguel</h2>
+                <i class="fa-solid fa-xmark close-modal1"></i>
+            </div>
+
+            <div class="modal-body">
+                <form action="controleEditoras.html">
+                    <input type="text" id="placeholder" placeholder="Nome do Usuário" required>
+                    <input type="text" id="placeholder" placeholder="Nome do Livro" required>
+                    <input type="date" id="placeholder" placeholder="Data de Devolução" required>
+                    <button class="comfirmar" type="submit">COMFIRMAR EMPRESTIMO</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Editar Aluguel -->
+        <div id="fade2" class="hide"></div>
+        <div id="modal2" class="hide">
+            <div class="modal-header">
+                <h2>Editar Aluguel</h2>
+                <i class="fa-solid fa-xmark close-modal2"></i>
+            </div>
+
+            <div class="modal-body">
+                <form action="controleEditoras.html">
+                    <input type="text" id="placeholder" placeholder="Nome" required>
+                    <input type="text" id="placeholder" placeholder="Autor" required>
+                    <input type="text" id="placeholder" placeholder="Editora" required>
+                    <input type="date" id="placeholder" placeholder="Data de Lançamento" required>
+                    <input type="number" id="placeholder" placeholder="Estoque" required>
+                    <button type="submit">SALVAR</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Devolução de Aluguel -->
+        <div id="fade3" class="hide"></div>
+        <div id="modal3" class="hide">
+            <div class="circulo">
+                <i class="fa-solid fa-exclamation"></i>
+            </div>
+            <div class="modal-body3">
+                <h3>Tem certeza que deseja fazer a devolução ?</h3>
+                <div class="button-container">
+                    <button id="sim">SIM</button>
+                    <button id="nao">NÃO</button>
+                </div>
+            </div>
+        </div>
+
         <div class="aluguel">
-            <a href="#">CADASTRAR ALUGUEL</a>
+            <a class="open-modal1">CADASTRAR ALUGUEL</a>
         </div>
 
         <div class="container">
             <div class="pesquisa">
                 <div id="barraPesquisa">
-                    <input class="pesquisa" type="text" placeholder="Nome da Editora">
+                    <input class="pesquisa" type="text" placeholder="Pesquisa de Aluguel">
                 </div>
             </div>
             <button class="button-pesquisar">PESQUISAR</button>
@@ -116,105 +169,130 @@
             <table>
                 <tr class="tabela">
                     <th>Código</th>
-                    <th>Nome da Editora</th>
-                    <th>Telefone</th>
-                    <th>Email</th>
+                    <th>Nome</th>
+                    <th>Nome do Livro</th>
+                    <th>Autor</th>
+                    <th>Editora</th>
+                    <th>Data de Devolução</th>
+                    <th>Status</th>
                 </tr>
                 <tr>
-                    <td>1</td>
-                    <td>Companhia das Letras</td>
-                    <td>(85) 9 8785-8860</td>
-                    <td>pablo@gmail.com</td>
-                    <td class="acoes">
-                        <i class="fa-regular fa-pen-to-square"></i>
-                        <i class="fa-regular fa-trash-can"></i>
+                    <td data-cell="Código">1</td>
+                    <td data-cell="Nome">Pablo Moreira</td>
+                    <td data-cell="Nome do Livro">1984</td>
+                    <td data-cell="Autor">George Orwell</td>
+                    <td data-cell="Editora">Companhia das Letras</td>
+                    <td data-cell="Data de Devolução">31/03/2007</td>
+                    <td data-cell="Status">Alugado</td>
+                    <td class="devolucao">
+                        <button class="button-devolucao open-modal3">DEVOLUÇÃO</button>
                     </td>
                 </tr>
-
+            
                 <br>
             </table>
 
             <table>
                 <tr class="tabela">
                     <th>Código</th>
-                    <th>Nome da Editora</th>
-                    <th>Telefone</th>
-                    <th>Email</th>
+                    <th>Nome</th>
+                    <th>Nome do Livro</th>
+                    <th>Autor</th>
+                    <th>Editora</th>
+                    <th>Data de Devolução</th>
+                    <th>Status</th>
                 </tr>
                 <tr>
-                    <td>2</td>
-                    <td>Companhia das Letras</td>
-                    <td>(85) 9 8785-8860</td>
-                    <td>pablo@gmail.com</td>
-                    <td class="acoes">
-                        <i class="fa-regular fa-pen-to-square"></i>
-                        <i class="fa-regular fa-trash-can"></i>
+                    <td data-cell="Código">2</td>
+                    <td data-cell="Nome">Pablo Moreira</td>
+                    <td data-cell="Nome do Livro">1984</td>
+                    <td data-cell="Autor">George Orwell</td>
+                    <td data-cell="Editora">Companhia das Letras</td>
+                    <td data-cell="Data de Devolução">31/03/2007</td>
+                    <td data-cell="Status">Alugado</td>
+                    <td class="devolucao">
+                        <button class="button-devolucao open-modal3">DEVOLUÇÃO</button>
                     </td>
                 </tr>
-
+            
                 <br>
             </table>
 
             <table>
                 <tr class="tabela">
                     <th>Código</th>
-                    <th>Nome da Editora</th>
-                    <th>Telefone</th>
-                    <th>Email</th>
+                    <th>Nome</th>
+                    <th>Nome do Livro</th>
+                    <th>Autor</th>
+                    <th>Editora</th>
+                    <th>Data de Devolução</th>
+                    <th>Status</th>
                 </tr>
                 <tr>
-                    <td>3</td>
-                    <td>Companhia das Letras</td>
-                    <td>(85) 9 8785-8860</td>
-                    <td>pablo@gmail.com</td>
-                    <td class="acoes">
-                        <i class="fa-regular fa-pen-to-square"></i>
-                        <i class="fa-regular fa-trash-can"></i>
+                    <td data-cell="Código">3</td>
+                    <td data-cell="Nome">Pablo Moreira</td>
+                    <td data-cell="Nome do Livro">1984</td>
+                    <td data-cell="Autor">George Orwell</td>
+                    <td data-cell="Editora">Companhia das Letras</td>
+                    <td data-cell="Data de Devolução">31/03/2007</td>
+                    <td data-cell="Status">Alugado</td>
+                    <td class="devolucao">
+                        <button class="button-devolucao">DEVOLUÇÃO</button>
                     </td>
                 </tr>
-
+            
                 <br>
             </table>
 
             <table>
                 <tr class="tabela">
                     <th>Código</th>
-                    <th>Nome da Editora</th>
-                    <th>Telefone</th>
-                    <th>Email</th>
+                    <th>Nome</th>
+                    <th>Nome do Livro</th>
+                    <th>Autor</th>
+                    <th>Editora</th>
+                    <th>Data de Devolução</th>
+                    <th>Status</th>
                 </tr>
                 <tr>
-                    <td>4</td>
-                    <td>Companhia das Letras</td>
-                    <td>(85) 9 8785-8860</td>
-                    <td>pablo@gmail.com</td>
-                    <td class="acoes">
-                        <i class="fa-regular fa-pen-to-square"></i>
-                        <i class="fa-regular fa-trash-can"></i>
+                    <td data-cell="Código">4</td>
+                    <td data-cell="Nome">Pablo Moreira</td>
+                    <td data-cell="Nome do Livro">1984</td>
+                    <td data-cell="Autor">George Orwell</td>
+                    <td data-cell="Editora">Companhia das Letras</td>
+                    <td data-cell="Data de Devolução">31/03/2007</td>
+                    <td data-cell="Status">Alugado</td>
+                    <td class="devolucao">
+                        <button class="button-devolucao">DEVOLUÇÃO</button>
                     </td>
                 </tr>
-
+            
                 <br>
             </table>
 
             <table>
                 <tr class="tabela">
                     <th>Código</th>
-                    <th>Nome da Editora</th>
-                    <th>Telefone</th>
-                    <th>Email</th>
+                    <th>Nome</th>
+                    <th>Nome do Livro</th>
+                    <th>Autor</th>
+                    <th>Editora</th>
+                    <th>Data de Devolução</th>
+                    <th>Status</th>
                 </tr>
                 <tr>
-                    <td>4</td>
-                    <td>Companhia das Letras</td>
-                    <td>(85) 9 8785-8860</td>
-                    <td>pablo@gmail.com</td>
-                    <td class="acoes">
-                        <i class="fa-regular fa-pen-to-square"></i>
-                        <i class="fa-regular fa-trash-can"></i>
+                    <td data-cell="Código">5</td>
+                    <td data-cell="Nome">Pablo Moreira</td>
+                    <td data-cell="Nome do Livro">1984</td>
+                    <td data-cell="Autor">George Orwell</td>
+                    <td data-cell="Editora">Companhia das Letras</td>
+                    <td data-cell="Data de Devolução">31/03/2007</td>
+                    <td data-cell="Status">Alugado</td>
+                    <td class="devolucao">
+                        <button class="button-devolucao">DEVOLUÇÃO</button>
                     </td>
                 </tr>
-
+            
                 <br>
             </table>
         </div>
@@ -228,6 +306,7 @@
         </div>
     </main>
     <script src="assets/javascript/script.js"></script>
+    <script src="assets/javascript/modais.js"></script>
 </body>
 
 </html>

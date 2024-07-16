@@ -1,7 +1,8 @@
 const modals = [
   { open: ".open-modal1", close: ".close-modal1", modal: "#modal1", fade: "#fade1" },
   { open: ".open-modal2", close: ".close-modal2", modal: "#modal2", fade: "#fade2" },
-  { open: ".open-modal3", close: ".close-modal3", modal: "#modal3", fade: "#fade3", sim: "#sim", nao: "#nao" }
+  { open: ".open-modal3", close: ".close-modal3", modal: "#modal3", fade: "#fade3", sim: "#sim", nao: "#nao" },
+  { open: ".open-modal4", close: ".close-modal4", modal: "#modal4", fade: "#fade4" } // Novo modal
 ];
 
 modals.forEach(({ open, close, modal, fade, sim, nao }) => {

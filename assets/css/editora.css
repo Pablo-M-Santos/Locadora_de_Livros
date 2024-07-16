@@ -6,21 +6,26 @@
     box-sizing: border-box;
 }
 
+body {
+    min-height: 100vh; 
+}
+
 main {
+    position: relative; 
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 10px;
-    padding-left: 240px;
+    overflow-y: auto;
+    max-height: calc(100vh - 0px);
     transition: padding-left 0.3s ease;
 }
-
 main.top {
     padding-left: 0;
 }
 
 .editora {
-    margin-top: 8px;
+    margin-top: 50px;
 }
 
 .editora a {
@@ -445,21 +450,24 @@ button:hover {
     opacity: 1;
 }
 
-.chevron{
+.chevron {
     background-color: #00000000;
     border: none;
     cursor: pointer;
 }
-
-.paginacao{
+.paginacao {
+    bottom: 0;
+    left: 0;
+    width: 100%; 
     display: flex;
+    justify-content: center;
     align-items: center;
-    margin-inline: auto;
     gap: 1rem;
-    margin-top: 10px;
+    padding: 10px 0; 
+
 }
 
-.item-paginacao{
+.item-paginacao {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -473,13 +481,8 @@ button:hover {
     border-radius: 4px;
 }
 
-.item-paginacao.active{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
+.item-paginacao.active {
     border: 2px solid black;
-    cursor: pointer;
 }
 
 .paginacao i {
@@ -494,25 +497,20 @@ button:hover {
     color: black;
 }
 
-@media (max-width: 1350px) {
+
+@media (max-width: 1100px) {
     .pesquisa {
         width: 650px;
     }
-    
-    .button-pesquisar {
-        width: 120px;
-    }
-}
 
-@media (max-width: 1050px) {
-    .pesquisa {
-        width: 550px;
+    table {
+        width: 945px;
     }
 }
 
 @media (max-width: 950px) {
     .pesquisa {
-        width: 450px;
+        width: 550px;
     }
 
     .button-pesquisar {
@@ -522,26 +520,127 @@ button:hover {
     .editora a {
         font-size: 14px;
     }
+
+    table {
+        width: 780px;
+    }
+
+    th,
+    td {
+        font-size: 14px;
+        font-weight: 800;
+    }
+
+    .acoes {
+        gap: 40px;
+    }
 }
 
 @media (max-width: 850px) {
-      .container button {
-        display: none;
+    table {
+        width: 650px;
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
     .pesquisa {
         width: 350px;
     }
-    .item-paginacao{
+
+    .item-paginacao {
         width: 30px;
         height: 30px;
     }
+
     .paginacao i {
         padding: 7px 9.75px 7px 10.84px;
     }
-    .sidebar.active + .pesquisa {
-        width: 500px;
+}
+
+@media (max-width: 675px) {
+    table {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 524px;
+        height:190px;
+    }
+    .tabela {
+        display: none;
+    }
+
+    tr td {
+        display: grid;
+        grid-template-columns: 15ch auto;
+        gap: 0.5rem;
+        padding: 0.45rem 1rem;
+    }
+
+    tr td:last-child {
+        grid-template-columns: auto auto;
+    }
+    
+    .acoes {
+        margin-top: 10px;
+    }
+
+    tr td:nth-child(1),
+    tr td:nth-child(2),
+    tr td:nth-child(3),
+    tr td:nth-child(4) {
+        text-align: left;
+    }
+
+    tr td:nth-child(1)::before,
+    tr td:nth-child(2)::before,
+    tr td:nth-child(3)::before,
+    tr td:nth-child(4)::before {
+        text-align: left;
+        content: attr(data-cell) ":  ";
+    }
+}
+
+@media (max-width: 550px) {
+    .pesquisa {
+        width: 250px;
+    }
+
+    table {
+        width: 424px;
+    }
+}
+
+@media (max-width: 450px) {
+    .container button {
+        display: none;
+    }
+
+    .pesquisa {
+        width: 350px;
+    }
+    table {
+        width: 354px;
+    }
+}
+
+@media (max-width: 350px) {
+    .pesquisa {
+        width: 280px;
+    }
+
+    .item-paginacao {
+        width: 25px;
+        height: 25px;
+    }
+
+    .paginacao i {
+        padding: 5px 7.75px 5px 8.84px;
+    }
+    table {
+        width: 310px;
+        height: 200px;
+    }
+    td th {
+        font-size: 14px;
     }
 }
