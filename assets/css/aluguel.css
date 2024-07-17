@@ -7,11 +7,11 @@
 }
 
 body {
-    min-height: 100vh; 
+    min-height: 100vh;
 }
 
 main {
-    position: relative; 
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,6 +20,7 @@ main {
     max-height: calc(100vh - 0px);
     transition: padding-left 0.3s ease;
 }
+
 main.top {
     padding-left: 0;
 }
@@ -128,13 +129,13 @@ th {
 }
 
 .button-devolucao {
-    width: 130px;
+    width: 120px;
     height: 34px;
     text-align: center;
     color: white;
     font-size: 14px;
     font-weight: 700;
-    background-color:#09D31D;
+    background-color: #09D31D;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -264,125 +265,6 @@ form {
     top: 0;
 }
 
-/* Modal2 */
-#modal2 button {
-    width: 232px;
-    height: 69px;
-    background-color: #FFFFFF;
-    font-weight: 800;
-    color: #000;
-    border: none;
-    border-radius: .25rem;
-    cursor: pointer;
-    opacity: .9;
-    font-size: 18px;
-    border-radius: 30px;
-}
-
-#modal2 button:hover {
-    opacity: 1;
-}
-
-#fade2 {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    z-index: 5;
-}
-
-
-#modal2 {
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 690px;
-    height: 532px;
-    background-color: #006666;
-    padding: 1.2rem;
-    border-radius: 0.5rem;
-    z-index: 10;
-}
-
-#placeholder::placeholder {
-    font-family: 'Popins', sans-serif;
-    font-weight: 800;
-    font-size: 18px;
-    color: rgba(0, 0, 0, 0.6);
-}
-
-input {
-    font-family: 'Popins', sans-serif;
-    font-weight: 800;
-    color: #00000099;
-    width: 517px;
-    height: 49px;
-    border-radius: 16px;
-}
-
-#fade2,
-#modal2 {
-    transition: 0.5s;
-    opacity: 1;
-    pointer-events: all;
-}
-
-.modal-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.modal-header h2 {
-    flex-grow: 1;
-    text-align: center;
-    font-weight: 800;
-    font-size: 32px;
-}
-
-.modal-header h2 {
-    color: rgb(255, 255, 255);
-}
-
-.modal-header i {
-    color: white;
-    font-size: 40px;
-    cursor: pointer;
-}
-
-.modal-body,
-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    gap: 30px;
-    border-radius: 20px;
-    font-family: 'Popins', sans-serif;
-    font-weight: 800;
-}
-
-.modal-body p {
-    margin-bottom: 1rem;
-}
-
-#modal2.hide,
-#fade2.hide {
-    opacity: 0;
-    pointer-events: none;
-}
-
-#modal2.hide {
-    top: 0;
-}
-
-
-
-
 /* Modal3 */
 #fade3 {
     position: fixed;
@@ -470,15 +352,16 @@ form {
     border: none;
     cursor: pointer;
 }
+
 .paginacao {
     bottom: 0;
     left: 0;
-    width: 100%; 
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    padding: 10px 0; 
+    padding: 10px 0;
 
 }
 
@@ -522,13 +405,15 @@ form {
     table {
         width: 945px;
     }
+
     table {
         display: flex;
         align-items: center;
         justify-content: center;
         width: 524px;
-        height:300px;
+        height: 300px;
     }
+
     .tabela {
         display: none;
     }
@@ -543,7 +428,7 @@ form {
     tr td:last-child {
         grid-template-columns: auto auto;
     }
-    
+
     .acoes {
         margin-top: 10px;
     }
@@ -624,6 +509,20 @@ form {
     table {
         width: 524px;
     }
+
+    #modal1, #modal3 {
+        width: 524px;
+    }
+
+    #modal1 input {
+        width: 450px;
+    }
+
+    #modal1 button {
+        width: 280px;
+        font-size: 16px;
+        height: 59px;
+    }
 }
 
 @media (max-width: 550px) {
@@ -633,6 +532,22 @@ form {
 
     table {
         width: 424px;
+    }
+
+    #modal1, #modal3 {
+        width: 424px;
+    }
+
+    #modal1 input {
+        width: 400px;
+    }
+
+    .modal-header h2 {
+        font-size: 28px;
+    }
+
+    .modal-header i {
+        font-size: 32px;
     }
 }
 
@@ -644,8 +559,34 @@ form {
     .pesquisa {
         width: 350px;
     }
+
     table {
         width: 345px;
+    }
+    #modal1, #modal3 {
+        width: 345px;
+    }
+    
+    #modal3{
+        height: 350px;
+    }
+
+    #modal1 input {
+        width: 320px;
+    }
+
+    #modal1 button {
+        width: 270px;
+        font-size: 15px;
+        height: 49px;
+    }
+
+    .modal-header h2 {
+        font-size: 24px;
+    }
+
+    .modal-body3 h3 {
+        font-size: 23px;
     }
 
 }
@@ -663,13 +604,37 @@ form {
     .paginacao i {
         padding: 5px 7.75px 5px 8.84px;
     }
+
     table {
         width: 310px;
         height: 400px;
     }
+
     td th {
         font-size: 14px;
     }
 
-  
+    #modal1, #modal3 {
+        width: 310px;
+    }
+    
+
+    #modal1 input {
+        width: 300px;
+    }
+
+    #modal1 button {
+        width: 270px;
+        font-size: 15px;
+        height: 49px;
+    }
+
+    .modal-header h2 {
+        font-size: 21px;
+    }
+
+    .modal-header i {
+        font-size: 28px;
+    }
+
 }
