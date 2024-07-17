@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+}
+
+main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    overflow-y: auto;
+    max-height: calc(100vh - 0px);
+    transition: padding-left 0.3s ease;
+}
+
+.graficos {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    padding: 15px;
+}
+
+.grafico1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 505px;
+    height: 299px;
+    padding: 10px;
+    box-shadow: 3px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    background-color: white;
+}
+
+.grafico2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 380px;
+    height: 289px;
+    padding: 10px;
+    box-shadow: 3px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    background-color: white;
+}
+
+.livros-alugados {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 1111px;
+    height: 250px;
+    box-shadow: 3px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    background-color: white;
+}
+
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 20px 0px 50px;
+}
+
+.titulo h1 {
+    font-size: 25px;
+}
+
+.titulo i {
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.dados {
+    flex: 1;
+}
+
+
+table {
+    width: 760px;
+    height: 80px;
+}
+
+table,
+th,
+td {
+    border-collapse: collapse;
+}
+
+td {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.60);
+    font-weight: 800;
+}
+
+th {
+    font-weight: 800;
+    font-size: 16px;
+}
+
+.mais-alugados {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+    width: 800px;
+    height: 336px;
+    background-color: white;
+    box-shadow: 3px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+.mais-alugados i {
+    font-size: 40px;
+}
+
+.mais-alugados h1 {
+    font-size: 25px;
+}
+
+@media (max-width: 1150px) {
+    .graficos {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .grafico2 {
+        width: 505px;
+        height: 299px;
+    }
+
+    .livros-alugados {
+        flex-direction: column;
+        width: 800px;
+        height: 500px;
+    }
+}
+
+@media (max-width: 850px) {
+    .livros-alugados {
+        width: 750px;
+    }
+
+    .mais-alugados {
+        width: 750px;
+    }
+}
+
+
+@media (max-width: 800px) {
+
+    .livros-alugados {
+        width: 505px;
+        height: auto;
+    }
+
+    .mais-alugados {
+        margin-top: 20px;
+        width: 505px;
+        height: 1200px;
+    }
+
+    .titulo {
+        margin-bottom: 20px;
+    }
+    
+    .mais-alugados h1 {
+        margin-bottom: 20px;
+    }
+
+    table {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 524px;
+        height: auto;
+    }
+
+    .tabela {
+        display: none;
+    }
+
+    tr td {
+        display: grid;
+        grid-template-columns: 20ch auto;
+        gap: 0.5rem;
+        padding: 0.45rem 1rem;
+    }
+
+    tr td:not(:last-child) {
+        margin-right: 1rem;
+    }
+
+    tr td:nth-child(1),
+    tr td:nth-child(2),
+    tr td:nth-child(3),
+    tr td:nth-child(4) {
+        text-align: left;
+    }
+
+    tr td:nth-child(1)::before,
+    tr td:nth-child(2)::before,
+    tr td:nth-child(3)::before,
+    tr td:nth-child(4)::before {
+        text-align: left;
+        content: attr(data-cell) ":  ";
+    }
+
+    .dados table {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 550px) {
+
+    .grafico1 {
+        width: 420px;
+    }
+
+    .mais-alugados h1 {
+        font-size: 22px;
+    }
+
+    .grafico2 {
+        width: 420px;
+    }
+
+    .livros-alugados {
+        width: 420px;
+        height: auto;
+    }
+
+    .mais-alugados {
+        width: 420px;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .grafico1 {
+        width: 350px;
+    }
+
+    .grafico2 {
+        width: 350px;
+    }
+
+    .livros-alugados {
+        width: 350px;
+        height: auto;
+    }
+
+    .mais-alugados {
+        width: 350px;
+    }
+
+     tr td {
+        grid-template-columns: 15ch auto;
+    }
+}
+
+@media (max-width: 370px) {
+
+    .grafico1 {
+        width: 320px;
+    }
+
+    .grafico2 {
+        width: 320px;
+    }
+
+    .livros-alugados {
+        width: 320px;
+        height: auto;
+    }
+
+    .livros-alugados h1 {
+        font-size: 22px;
+    }
+
+    .mais-alugados {
+        width: 320px;
+    }
+
+     tr td {
+        grid-template-columns: 12ch auto;
+    }
+}

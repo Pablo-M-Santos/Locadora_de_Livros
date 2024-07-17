@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="shortcut icon" href="assets/imagens/favicon.png" type="image/x-icon">
+    <title>Locadora de Livros | Página Inicial</title>
+    <link rel="stylesheet" href="assets/css/sidebarMenu.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+</head>
+
+<body>
+    <!-- Menu Lateral -->
+    <nav class="sidebar">
+        <div id="container">
+            <!-- Logo -->
+            <img class="logo" src="assets/imagens/logo.png" alt="Logo WDA">
+            <!-- Itens -->
+            <ul id="itens">
+                <a href="dashboard.html">
+                    <li class="item active-item">
+                        <i class="fa-solid fa-house"></i>
+                        <span class="itemDescription">
+                            Página Inicial
+                        </span>
+                    </li>
+                </a>
+
+                <a href="controleEditoras.html">
+                    <li class="item">
+                        <i class="fa-solid fa-pencil"></i>
+                        <span class="itemDescription">
+                            Controle de Editoras
+                        </span>
+                    </li>
+                </a>
+
+                <a href="controleLivros.html">
+                    <li class="item">
+                        <i class="fa-solid fa-book"></i>
+                        <span class="itemDescription">
+                            Controle de Livros
+                        </span>
+                    </li>
+                </a>
+
+                <a href="controleLocatario.html">
+                    <li class="item">
+                        <i class="fa-solid fa-user"></i>
+                        <span class="itemDescription">
+                            Controle Locatário
+                        </span>
+                    </li>
+                </a>
+
+                <a href="controleAluguel.html">
+                    <li class="item">
+                        <i class="fa-solid fa-book-open"></i>
+                        <span class="itemDescription">
+                            Controle de Aluguel
+                        </span>
+                    </li>
+                </a>
+
+                <a href="controleUsuario.html">
+                    <li class="item">
+                        <i class="fa-solid fa-gears"></i>
+                        <span class="itemDescription">
+                            Controle de Usuário
+                        </span>
+                    </li>
+                </a>
+            </ul>
+        </div>
+
+        <a href="index.html">
+            <li class="item">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span class="itemDescription">
+                    Logout
+                </span>
+            </li>
+        </a>
+    </nav>
+
+    <!-- Menu superior -->
+    <header>
+        <a class="menu" href="#">
+            <i class="fa-solid fa-bars" id="menuBtn"></i>
+        </a>
+        Página inicial
+    </header>
+    <!-- Corpo -->
+    <main>
+        <div class="graficos">
+            <div class="grafico1">
+                <canvas id="barchart" width="463" height="237"></canvas>
+            </div>
+            <div class="grafico2">
+                <canvas id="doughnut" width="290" height="201"></canvas>
+            </div>
+        </div>
+
+        <div class="livros-alugados">
+            <div class="titulo">
+                <i class="fa-solid fa-crown" style="color: #FFD43B;"></i>
+                <h1>TOP 3 Livros Alugados</h1>
+            </div>
+
+            <div class="dados">
+                <table>
+                    <tr class="tabela">
+                        <th>Classificação</th>
+                        <th>Nome do Livro</th>
+                        <th>Autor</th>
+                        <th>Editora</th>
+                    </tr>
+                    <tr>
+                        <td data-cell="Classificação">3</td>
+                        <td data-cell="Nome do Livro">1984</td>
+                        <td data-cell="Autor">George Orwell</td>
+                        <td data-cell="Editora">Companhia das Letras</td>
+                    </tr>
+                </table>
+
+                <table>
+                    <tr class="tabela">
+                        <th>Classificação</th>
+                        <th>Nome do Livro</th>
+                        <th>Autor</th>
+                        <th>Editora</th>
+                    </tr>
+
+                    <tr>
+                        <td data-cell="Classificação">2</td>
+                        <td data-cell="Nome do Livro">1984</td>
+                        <td data-cell="Autor">George Orwell</td>
+                        <td data-cell="Editora">Companhia das Letras</td>
+                    </tr>
+                </table>
+
+                <table>
+                    <tr class="tabela">
+                        <th>Classificação</th>
+                        <th>Nome do Livro</th>
+                        <th>Autor</th>
+                        <th>Editora</th>
+                    </tr>
+                    <tr>
+                        <td data-cell="Classificação">3</td>
+                        <td data-cell="Nome do Livro">1984</td>
+                        <td data-cell="Autor">George Orwell</td>
+                        <td data-cell="Editora">Companhia das Letras</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="mais-alugados">
+            <i class="fa-solid fa-crown" style="color: #FFD43B;"></i>
+            <h1>TOP 3 usuários com mais aluguéis</h1>
+
+            <div class="dados">
+                <table>
+                    <tr class="tabela">
+                        <th>Código</th>
+                        <th>Nome</th>
+                        <th>Total de empréstimos</th>
+                        <th>Aluguéis ativos</th>
+                    </tr>
+                    <tr>
+                        <td data-cell="Código">1</td>
+                        <td data-cell="Nome">Pablo Moreira Santos</td>
+                        <td data-cell="Total de empréstimos">52</td>
+                        <td data-cell="Aluguéis ativos">20</td>
+                    </tr>
+                </table>
+
+                <table>
+                    <tr class="tabela">
+                        <th>Código</th>
+                        <th>Nome</th>
+                        <th>Total de empréstimos</th>
+                        <th>Aluguéis ativos</th>
+                    </tr>
+                    <tr>
+                        <td data-cell="Código">1</td>
+                        <td data-cell="Nome">Pablo Moreira Santos</td>
+                        <td data-cell="Total de empréstimos">52</td>
+                        <td data-cell="Aluguéis ativos">20</td>
+                    </tr>
+                </table>
+
+                <table>
+                    <tr class="tabela">
+                        <th>Código</th>
+                        <th>Nome</th>
+                        <th>Total de empréstimos</th>
+                        <th>Aluguéis ativos</th>
+                    </tr>
+                    <tr>
+                        <td data-cell="Código">1</td>
+                        <td data-cell="Nome">Pablo Moreira Santos</td>
+                        <td data-cell="Total de empréstimos">52</td>
+                        <td data-cell="Aluguéis ativos">20</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+    <script src="assets/javascript/script.js"></script>
+    <script src="assets/javascript/dashboard.js"></script>
+</body>
+
+</html>
