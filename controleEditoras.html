@@ -114,7 +114,7 @@
             </div>
 
             <div class="modal-body">
-                <form action="controleEditoras.html">
+                <form id="cadastroForm" action="controleEditoras.html">
                     <input type="text" id="placeholder" placeholder="Nome da Editora" required>
                     <input type="email" id="placeholder" placeholder="Email" required>
                     <input type="number" id="placeholder" placeholder="Telefone" required>
@@ -122,6 +122,10 @@
                     <button type="submit">CADASTRAR</button>
                 </form>
             </div>
+        </div>
+        <!-- Mensagem de Sucesso -->
+        <div id="successMessage" class="hide">
+            <p>Cadastro realizado com sucesso!</p>
         </div>
 
         <!-- Editar Usuário -->
@@ -133,7 +137,7 @@
             </div>
 
             <div class="modal-body">
-                <form action="controleEditoras.html">
+                <form id="editarForm" action="controleEditoras.html">
                     <input type="text" id="placeholder" placeholder="Nome da Editora" required>
                     <input type="email" id="placeholder" placeholder="Email" required>
                     <input type="number" id="placeholder" placeholder="Telefone" required>
@@ -141,6 +145,10 @@
                     <button type="submit">SALVAR</button>
                 </form>
             </div>
+        </div>
+        <!-- Mensagem de Sucesso -->
+        <div id="successMessage2" class="hide">
+            <p>Edição realizado com sucesso!</p>
         </div>
 
         <!-- Excluir Usuário -->
@@ -156,6 +164,11 @@
                     <button id="nao">NÃO</button>
                 </div>
             </div>
+        </div>
+
+         <!-- Mensagem de Sucesso -->
+         <div id="successMessage3" class="hide">
+            <p>Exclusão realizado com sucesso!</p>
         </div>
 
         <!-- Barra de pesquisa -->

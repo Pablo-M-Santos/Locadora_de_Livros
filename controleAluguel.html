@@ -107,13 +107,18 @@
             </div>
 
             <div class="modal-body">
-                <form action="controleEditoras.html">
+                <form id="cadastroForm" action="controleEditoras.html">
                     <input type="text" id="placeholder" placeholder="Nome do Usuário" required>
                     <input type="text" id="placeholder" placeholder="Nome do Livro" required>
                     <input type="date" id="placeholder" placeholder="Data de Devolução" required>
                     <button class="comfirmar" type="submit">COMFIRMAR EMPRESTIMO</button>
                 </form>
             </div>
+        </div>
+
+        <!-- Mensagem de Sucesso -->
+        <div id="successMessage" class="hide">
+            <p>Cadastro realizado com sucesso!</p>
         </div>
 
 
@@ -145,6 +150,11 @@
             <button class="button-pesquisar">PESQUISAR</button>
         </div>
 
+        <!-- Mensagem de Sucesso -->
+        <div id="successMessage3" class="hide">
+            <p>Devolução realizada com sucesso!</p>
+        </div>
+
         <!-- Tabelas -->
         <div class="container-table">
             <table>
@@ -169,7 +179,7 @@
                         <button class="button-devolucao open-modal3">DEVOLUÇÃO</button>
                     </td>
                 </tr>
-            
+
                 <br>
             </table>
 
@@ -195,7 +205,7 @@
                         <button class="button-devolucao open-modal3">DEVOLUÇÃO</button>
                     </td>
                 </tr>
-            
+
                 <br>
             </table>
 
@@ -221,7 +231,7 @@
                         <button class="button-devolucao">DEVOLUÇÃO</button>
                     </td>
                 </tr>
-            
+
                 <br>
             </table>
 
@@ -247,7 +257,7 @@
                         <button class="button-devolucao">DEVOLUÇÃO</button>
                     </td>
                 </tr>
-            
+
                 <br>
             </table>
 
@@ -273,7 +283,7 @@
                         <button class="button-devolucao">DEVOLUÇÃO</button>
                     </td>
                 </tr>
-            
+
                 <br>
             </table>
         </div>

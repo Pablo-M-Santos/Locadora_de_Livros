@@ -9,9 +9,31 @@ const main = document.querySelector('main');
 const paginacaoItems = document.querySelectorAll('.item-paginacao');
 const prevButton = document.getElementById('prev');
 const nextButton = document.getElementById('next');
+const editorCheckbox = document.getElementById('editorCheckbox');
+const leitorCheckbox = document.getElementById('leitorCheckbox');
+const editorCheckbox2 = document.getElementById('editorCheckbox2');
+const leitorCheckbox2 = document.getElementById('leitorCheckbox2');
+const cadastroCheckbox = document.getElementById('leitoCheckbox');
+const editarCheckbox = document.getElementById('editarCheckbox');
 
-// Função para alternar a visibilidade do sidebar
-menuBtn.addEventListener('click', function() {
+
+
+function validateForm() {
+  const username = document.getElementById('username').value;
+  const password = document.getElementById('password').value;
+
+ 
+  if (username === 'admin' && password === 'admin') {
+
+    return true; 
+  } else {
+    
+    alert('Nome de usuário ou senha incorretos.');
+    return false;
+  }
+}
+
+menuBtn.addEventListener('click', function () {
   sidebar.classList.toggle("active");
   header.classList.toggle("top");
   main.classList.toggle("top");
@@ -20,41 +42,41 @@ menuBtn.addEventListener('click', function() {
   }
 });
 
-// Função para esconder o sidebar ao clicar no overlay
+
 if (overlay) {
-  overlay.addEventListener('click', function() {
+  overlay.addEventListener('click', function () {
     overlay.classList.toggle("hidden");
     sidebar.classList.toggle("active");
     header.classList.toggle("shifted");
   });
-}
+};
 
-// Função para alternar a visibilidade do sub-menu
+
 function toggleSubMenu() {
   subMenu.style.display = (subMenu.style.display === 'none' || subMenu.style.display === '') ? 'flex' : 'none';
 }
 
-// Adiciona o evento de clique ao botão de usuário
+
 if (userBtn) {
-  userBtn.addEventListener('click', function(event) {
-    event.stopPropagation(); // Impede que o evento de clique se propague para fora do botão
+  userBtn.addEventListener('click', function (event) {
+    event.stopPropagation();
     toggleSubMenu();
   });
 }
 
-// Adiciona o evento de clique fora do sub-menu para fechá-lo
-document.addEventListener('click', function(event) {
+
+document.addEventListener('click', function (event) {
   if (subMenu && !subMenu.contains(event.target) && event.target !== userBtn) {
     subMenu.style.display = 'none';
   }
 });
 
-// Paginação
-prevButton.addEventListener('click', function() {
+
+prevButton.addEventListener('click', function () {
   changePage(-1);
 });
 
-nextButton.addEventListener('click', function() {
+nextButton.addEventListener('click', function () {
   changePage(1);
 });
 
@@ -73,7 +95,6 @@ function changePage(direction) {
   paginacaoItems[newIndex].classList.add('active');
 }
 
-// Função para fechar o sidebar
 function closeSidebar() {
   sidebar.classList.add("active");
   header.classList.add("top");
@@ -84,7 +105,7 @@ function closeSidebar() {
   header.classList.add("shifted");
 }
 
-// Event listener para fechar o sidebar ao clicar fora dele
+
 document.addEventListener('click', function (event) {
   const isClickInsideSidebar = sidebar.contains(event.target);
   const isClickInsideMenuBtn = menuBtn.contains(event.target);
@@ -94,9 +115,28 @@ document.addEventListener('click', function (event) {
   }
 });
 
-// Event listener para fechar o sidebar ao clicar no overlay
+
 if (overlay) {
   overlay.addEventListener('click', function () {
     closeSidebar();
   });
+}
+
+
+function toggleCheckboxes(checkbox1, checkbox2) {
+  checkbox1.addEventListener('change', function () {
+    checkbox2.disabled = checkbox1.checked;
+  });
+
+  checkbox2.addEventListener('change', function () {
+    checkbox1.disabled = checkbox2.checked;
+  });
+}
+
+
+if (editorCheckbox && leitorCheckbox) {
+  toggleCheckboxes(editorCheckbox, leitorCheckbox);
+}
+if (editorCheckbox2 && leitorCheckbox2) {
+  toggleCheckboxes(editorCheckbox2, leitorCheckbox2);
 }

@@ -149,6 +149,24 @@ th {
     color: rgba(9, 211, 29, 0.60)
 }
 
+
+#successMessage {
+    display: none;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+#successMessage.show {
+    display: block;
+}
+
 /* Modal1 */
 #modal1 button {
     width: 325px;
@@ -345,7 +363,22 @@ form {
     gap: 50px;
 }
 
+#successMessage3 {
+    display: none;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    z-index: 1000;
+}
 
+#successMessage3.show {
+    display: block;
+}
 
 .chevron {
     background-color: #00000000;

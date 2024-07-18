@@ -116,7 +116,7 @@
             </div>
 
             <div class="modal-body">
-                <form action="controleEditoras.html">
+                <form id="cadastroForm" action="controleUsuario.html">
                     <input type="text" id="placeholder" placeholder="Nome" required>
                     <input type="email" id="placeholder" placeholder="Email" required>
                     <input type="password" id="placeholder" placeholder="Senha" required>
@@ -136,7 +136,12 @@
             </div>
         </div>
 
-        <!-- Editar Editora -->
+        <!-- Mensagem de Sucesso -->
+        <div id="successMessage" class="hide">
+            <p>Cadastro realizado com sucesso!</p>
+        </div>
+
+        <!-- Editar Usuário -->
         <div id="fade2" class="hide"></div>
         <div id="modal2" class="hide">
             <div class="modal-header">
@@ -145,24 +150,29 @@
             </div>
 
             <div class="modal-body">
-                <form action="controleEditoras.html">
-                    <input type="text" id="placeholder" placeholder="Nome" required>
-                    <input type="email" id="placeholder" placeholder="Email" required>
-                    <input type="password" id="placeholder" placeholder="Senha" required>
+                <form id="editarForm" action="controleUsuario.html">
+                    <input type="text" placeholder="Nome" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="password" placeholder="Senha" required>
                     <div class="checkbox">
                         <div class="checkbox-container">
-                            <input type="checkbox" id="editorCheckbox" name="tipo" value="editor">
-                            <label for="editorCheckbox">Editor</label>
+                            <input type="checkbox" id="editorCheckbox2" name="tipo" value="editor">
+                            <label for="editorCheckbox2">Editor</label>
                         </div>
 
                         <div class="checkbox-container">
-                            <input type="checkbox" id="leitorCheckbox" name="tipo" value="leitor">
-                            <label for="leitorCheckbox">Leitor</label>
+                            <input type="checkbox" id="leitorCheckbox2" name="tipo" value="leitor">
+                            <label for="leitorCheckbox2">Leitor</label>
                         </div>
                     </div>
                     <button type="submit">SALVAR</button>
                 </form>
             </div>
+        </div>
+
+        <!-- Mensagem de Sucesso-->
+        <div id="successMessage2" class="hide">
+            <p>Edição realizada com sucesso!</p>
         </div>
 
         <!-- Excluir Editora -->
@@ -178,6 +188,11 @@
                     <button id="nao">NÃO</button>
                 </div>
             </div>
+        </div>
+
+        <!-- Mensagem de Sucesso -->
+        <div id="successMessage3" class="hide">
+            <p>Exclusão realizado com sucesso!</p>
         </div>
 
         <!-- Barra de pesquisa -->
@@ -298,7 +313,7 @@
                 <br>
             </table>
 
-          
+
         </div>
         <div class="paginacao">
             <i id="prev" class="fa-solid fa-chevron-left chevron"></i>

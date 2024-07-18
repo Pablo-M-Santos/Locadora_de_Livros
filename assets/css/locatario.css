@@ -287,6 +287,24 @@ form.formulario {
     top: 0;
 }
 
+#successMessage {
+    display: none;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+#successMessage.show {
+    display: block;
+}
+
+
 
 /* Modal2 */
 #modal2 button {
@@ -430,6 +448,25 @@ form.formulario {
     top: 0;
 }
 
+#successMessage2 {
+    display: none;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+#successMessage2.show {
+    display: block;
+}
+
+
+
 /* Modal3 */
 #fade3 {
     position: fixed;
@@ -527,6 +564,24 @@ button {
 button:hover {
     opacity: 1;
 }
+
+#successMessage3 {
+    display: none;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+#successMessage3.show {
+    display: block;
+}
+
 
 
 

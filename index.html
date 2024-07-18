@@ -19,19 +19,19 @@
             <h1>Fazer Login</h1>
             <h2>Preencha o formulário</h2>
 
-            <form class="form" action="dashboard.html">
+            <form class="form" action="dashboard.html" onsubmit="return validateForm()">
                 <div class="input">
                     <i class='bx bx-user icon'></i>
-                    <input type="text" class="form-input" name="nome" id="placeholder" placeholder="Nome" required>
+                    <input type="text" class="form-input" name="username" id="username" placeholder="Nome de usuário" required>
                 </div>
                 <div class="input" id="input-2">
                     <i class="fa-solid fa-lock icon"></i>
-                    <input type="password" class="form-input" name="email" id="placeholder" placeholder="Senha"
-                        required>
+                    <input type="password" class="form-input" name="password" id="password" placeholder="Senha" required>
                 </div>
                 <button type="submit">ENTRAR</button>
-                <a class="recuperarSenha" href="recuperarSenha.html">Esqueci senha</a>
+                <a class="recuperarSenha" href="recuperarSenha.html">Esqueci minha senha</a>
             </form>
+            
         </div>
 
         <div class="container-interno">
