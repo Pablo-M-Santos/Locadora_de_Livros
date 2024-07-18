@@ -1144,6 +1144,16 @@ input {
     #modal3 h3 {
         font-size: 23px;
     }
+
+    #successMessage {
+        width: 270px;
+    }
+    #successMessage2 {
+        width: 270px;
+    }
+    #successMessage3 {
+        width: 270px;
+    }
 }
 
 @media (max-width: 450px) {

@@ -150,30 +150,25 @@ th {
 }
 
 
-#successMessage {
-    display: none;
-    background-color: #4CAF50;
-    color: white;
-    padding: 15px;
-    position: fixed;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 5px;
-    z-index: 1000;
+.acoes {
+    display: flex;
+    justify-content: center;
+    gap: 55px;
+    font-size: 25px;
 }
 
-#successMessage.show {
-    display: block;
+.acoes i {
+    cursor: pointer;
 }
+
 
 /* Modal1 */
 #modal1 button {
-    width: 325px;
+    width: 232px;
     height: 69px;
     background-color: #FFFFFF;
     font-weight: 800;
-    color: #000;
+    color: #000000;
     border: none;
     border-radius: .25rem;
     cursor: pointer;
@@ -202,11 +197,11 @@ th {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 691px;
-    height: 453px;
+    width: 690px;
+    height: 480px;
     background-color: #006666;
     padding: 1.2rem;
-    border-radius: 20px;
+    border-radius: 0.5rem;
     z-index: 10;
 }
 
@@ -282,6 +277,187 @@ form {
 #modal1.hide {
     top: 0;
 }
+
+
+#successMessage {
+    display: none;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+#successMessage.show {
+    display: block;
+}
+
+
+
+/* Modal2 */
+#modal2 button {
+    width: 232px;
+    height: 69px;
+    background-color: #FFFFFF;
+    font-weight: 800;
+    color: #000;
+    border: none;
+    border-radius: .25rem;
+    cursor: pointer;
+    opacity: .9;
+    font-size: 18px;
+    border-radius: 30px;
+}
+
+#modal2 button:hover {
+    opacity: 1;
+}
+
+#fade2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 5;
+}
+
+
+#modal2 {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 690px;
+    height: 532px;
+    background-color: #006666;
+    padding: 1.2rem;
+    border-radius: 20px;
+    z-index: 10;
+}
+
+#placeholder::placeholder {
+    font-family: 'Popins', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+input {
+    font-family: 'Popins', sans-serif;
+    font-weight: 800;
+    color: #00000099;
+    width: 517px;
+    height: 49px;
+    border-radius: 16px;
+}
+
+#fade2,
+#modal2 {
+    transition: 0.5s;
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-header h2 {
+    flex-grow: 1;
+    text-align: center;
+    font-weight: 800;
+    font-size: 32px;
+}
+
+.modal-header h2 {
+    color: rgb(255, 255, 255);
+}
+
+.modal-header i {
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.modal-body,
+form.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 30px;
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+}
+
+.formulario {
+    width: 100%;
+
+}
+
+.columns {
+    display: flex;
+    gap: 30px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+}
+
+.row {
+    display: flex;
+    gap: 9px;
+}
+
+.formulario input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    font-size: 16px;
+}
+
+#modal2.hide,
+#fade2.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#modal2.hide {
+    top: 0;
+}
+
+#successMessage2 {
+    display: none;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+#successMessage2.show {
+    display: block;
+}
+
+
 
 /* Modal3 */
 #fade3 {
@@ -363,6 +539,24 @@ form {
     gap: 50px;
 }
 
+button {
+    width: 100px;
+    height: 50px;
+    background-color: #FFFFFF;
+    font-weight: 800;
+    color: #000;
+    border: none;
+    border-radius: .25rem;
+    cursor: pointer;
+    opacity: .9;
+    font-size: 23px;
+    border-radius: 10px;
+}
+
+button:hover {
+    opacity: 1;
+}
+
 #successMessage3 {
     display: none;
     background-color: #4CAF50;
@@ -379,6 +573,246 @@ form {
 #successMessage3.show {
     display: block;
 }
+
+
+/* Modal4 */
+#modal4 button {
+    width: 232px;
+    height: 69px;
+    background-color: #FFFFFF;
+    font-weight: 800;
+    color: #000;
+    border: none;
+    border-radius: .25rem;
+    cursor: pointer;
+    opacity: .9;
+    font-size: 18px;
+    border-radius: 30px;
+}
+
+#modal4 button:hover {
+    opacity: 1;
+}
+
+#fade4 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 5;
+}
+
+
+#modal4 {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 1250px;
+    height: 400px;
+    background-color: #ffffff;
+    box-shadow: 3px 4px 10px 0px rgba(0, 0, 0, 0.60);
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+    z-index: 10;
+}
+
+#placeholder::placeholder {
+    font-family: 'Popins', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+input {
+    font-family: 'Popins', sans-serif;
+    font-weight: 800;
+    color: #00000099;
+    width: 517px;
+    height: 49px;
+    border-radius: 16px;
+}
+
+#fade4,
+#modal4 {
+    transition: 0.5s;
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-header h2 {
+    flex-grow: 1;
+    text-align: center;
+    font-weight: 800;
+    font-size: 32px;
+}
+
+.modal-header h2 {
+    color: rgb(255, 255, 255);
+}
+
+.modal-header i {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.modal-header4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-header4 h2 {
+    flex-grow: 1;
+    text-align: center;
+    font-weight: 800;
+    font-size: 32px;
+}
+
+.modal-header4 h2 {
+    color: rgb(0, 0, 0);
+}
+
+.modal-header4 i {
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    cursor: pointer;
+}
+
+#modal4.hide,
+#fade4.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#modal4.hide {
+    top: 0;
+}
+
+/* Modal5 */
+#fade5 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 5;
+  }
+  
+  #modal5 {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 690px;
+    height: 400px;
+    background-color: #006666;
+    padding: 1.2rem;
+    border-radius: 20px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .modal-body5 {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  #fade5,
+  #modal5 {
+    transition: 0.5s;
+    opacity: 1;
+    pointer-events: all;
+  }
+  
+  #modal5.hide,
+  #fade5.hide {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  #modal5.hide {
+    top: 0;
+  }
+  
+  .modal-body5 h3 {
+    font-size: 25px;
+    color: white;
+    font-size: 800;
+    margin-bottom: 56px;
+  }
+  
+  .circulo {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: red;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+  }
+  
+  .button-container {
+    display: flex;
+    gap: 50px;
+  }
+  
+  button {
+    width: 100px;
+    height: 50px;
+    background-color: #FFFFFF;
+    font-weight: 800;
+    color: #000;
+    border: none;
+    border-radius: .25rem;
+    cursor: pointer;
+    opacity: .9;
+    font-size: 23px;
+    border-radius: 10px;
+  }
+  
+  button:hover {
+    opacity: 1;
+  }
+  
+  #successMessage5 {
+    display: none;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    z-index: 1000;
+  }
+  
+  #successMessage5.show {
+    display: block;
+  }
+  
 
 .chevron {
     background-color: #00000000;
@@ -428,23 +862,139 @@ form {
     color: black;
 }
 
+.table-sobre {
+    box-shadow: none;
+    width: 1229px;
+    height: 228px;
+}
+
+@media (max-width: 1300px) {
+
+    #modal4 {
+        width: 1100px;
+        height: 400px;
+    }
+
+    .table-sobre {
+        width: 1100px;
+        height: 228px;
+    }
+
+
+}
 
 @media (max-width: 1100px) {
-
     .pesquisa {
         width: 650px;
     }
 
     table {
-        width: 945px;
+        width: 900px;
     }
 
+    #modal1 , #modal2 {
+        width: 690px;
+        height: 480px;
+    }
+
+    #nome,
+    #celular,
+    #bairro {
+        width: 420px;
+    }
+
+    #email,
+    #cidade {
+        width: 420px;
+    }
+
+    #numero,
+    #uf {
+        width: 210px;
+    }
+
+    #logadouro,
+    #cpf {
+        width: 879px;
+    }
+
+    #modal4 {
+        width: 600px;
+        height: 550px;
+    }
+
+    .table-sobre {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        width: 600px;
+        height: auto;
+    }
+
+    .table-sobre .tabela {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 524px;
+        height: 250px;
+    }
+
+    .table-sobre .tabela {
+        display: none;
+    }
+
+    .table-sobre tr td {
+        display: grid;
+        grid-template-columns: 10ch auto;
+        gap: 0.5rem;
+        padding: 0.45rem 1rem;
+    }
+
+    .table-sobre tr td:last-child {
+        grid-template-columns: auto auto;
+    }
+
+    .table-sobre .acoes {
+        margin-top: 10px;
+    }
+
+
+    .table-sobre tr td:nth-child(1),
+    .table-sobre tr td:nth-child(2),
+    .table-sobre tr td:nth-child(3),
+    .table-sobre tr td:nth-child(4),
+    .table-sobre tr td:nth-child(5),
+    .table-sobre tr td:nth-child(6),
+    .table-sobre tr td:nth-child(7),
+    .table-sobre tr td:nth-child(8),
+    .table-sobre tr td:nth-child(9),
+    .table-sobre tr td:nth-child(10) {
+        text-align: left;
+    }
+
+    .table-sobre tr td:nth-child(1)::before,
+    .table-sobre tr td:nth-child(2)::before,
+    .table-sobre tr td:nth-child(3)::before,
+    .table-sobre tr td:nth-child(4)::before,
+    .table-sobre tr td:nth-child(5)::before,
+    .table-sobre tr td:nth-child(6)::before,
+    .table-sobre tr td:nth-child(7)::before,
+    .table-sobre tr td:nth-child(8)::before,
+    .table-sobre tr td:nth-child(9)::before,
+    .table-sobre tr td:nth-child(10)::before {
+        text-align: left;
+        content: attr(data-cell) ":  ";
+    }
+}
+
+
+@media (max-width: 1000px) {
     table {
         display: flex;
         align-items: center;
         justify-content: center;
         width: 524px;
-        height: 300px;
+        height: 250px;
     }
 
     .tabela {
@@ -453,7 +1003,7 @@ form {
 
     tr td {
         display: grid;
-        grid-template-columns: 20ch auto;
+        grid-template-columns: 10ch auto;
         gap: 0.5rem;
         padding: 0.45rem 1rem;
     }
@@ -470,9 +1020,7 @@ form {
     tr td:nth-child(2),
     tr td:nth-child(3),
     tr td:nth-child(4),
-    tr td:nth-child(5),
-    tr td:nth-child(6),
-    tr td:nth-child(7) {
+    tr td:nth-child(5) {
         text-align: left;
     }
 
@@ -480,16 +1028,38 @@ form {
     tr td:nth-child(2)::before,
     tr td:nth-child(3)::before,
     tr td:nth-child(4)::before,
-    tr td:nth-child(5)::before,
-    tr td:nth-child(6)::before,
-    tr td:nth-child(7)::before {
+    tr td:nth-child(5)::before {
         text-align: left;
         content: attr(data-cell) ":  ";
     }
+
+    #modal1, #modal2 {
+        width: 690px;
+    }
+
+    #nome,
+    #celular,
+    #bairro {
+        width: 360px;
+    }
+
+    #email,
+    #cidade {
+        width: 360px;
+    }
+
+    #numero,
+    #uf {
+        width: 175px;
+    }
+
+    #logadouro,
+    #cpf {
+        width: 750px;
+    }
+
+
 }
-
-
-
 
 @media (max-width: 950px) {
     .pesquisa {
@@ -514,20 +1084,81 @@ form {
         font-weight: 800;
     }
 
+    .table-sobre th,
+    td {
+        font-size: 16px;
+        font-weight: 800;
+    }
+
     .acoes {
         gap: 40px;
+    }
+
+    #modal1, #modal2 {
+        width: 690px;
     }
 }
 
 @media (max-width: 850px) {
     table {
-        width: 650px;
+        width: 720px;
+    }
+
+
+    #modal1, #modal2 {
+        width: 690px;
+
+    }
+
+    #nome,
+    #celular,
+    #bairro {
+        width: 300px;
+    }
+
+    #logadouro,
+    #cpf {
+        width: 690px;
+    }
+
+    #modal1 button {
+        width: 200px;
+        height: 59px;
     }
 }
 
 @media (max-width: 750px) {
     .pesquisa {
         width: 350px;
+    }
+
+    table {
+        width: 510px;
+    }
+
+    #modal1, #modal2 {
+        width: 510px;
+    }
+
+    #nome,
+    #celular,
+    #bairro {
+        width: 225px;
+    }
+
+    #email,
+    #cidade {
+        width: 225px;
+    }
+
+    #numero,
+    #uf {
+        width: 108px;
+    }
+
+    #logadouro,
+    #cpf {
+        width: 480px;
     }
 
     .item-paginacao {
@@ -539,22 +1170,13 @@ form {
         padding: 7px 9.75px 7px 10.84px;
     }
 
-    table {
-        width: 524px;
-    }
-
-    #modal1, #modal3 {
-        width: 524px;
-    }
-
-    #modal1 input {
+    #modal4,
+    .table-sobre {
         width: 450px;
     }
 
-    #modal1 button {
-        width: 280px;
-        font-size: 16px;
-        height: 59px;
+    #modal3, #modal5 {
+        width: 500px;
     }
 }
 
@@ -567,20 +1189,79 @@ form {
         width: 424px;
     }
 
-    #modal1, #modal3 {
+    #modal1, #modal2 {
         width: 424px;
-    }
-
-    #modal1 input {
-        width: 400px;
+        height: 380px;
     }
 
     .modal-header h2 {
-        font-size: 28px;
+        font-size: 24px;
     }
 
+
     .modal-header i {
-        font-size: 32px;
+        font-size: 34px;
+    }
+    .columns {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .formulario input {
+        height: 40px;
+    }
+
+    #nome,
+    #celular,
+    #bairro {
+        width: 360px;
+    }
+
+    #email,
+    #cidade {
+        width: 360px;
+    }
+
+    #numero,
+    #uf {
+        width: 175.5px;
+    }
+
+    #logadouro,
+    #cpf {
+        width: 360px;
+    }
+
+    .modal-body,
+    form.formulario {
+        gap: 20px;
+    }
+
+    #modal4,
+    .table-sobre {
+        width: 400px;
+    }
+
+    #modal3, #modal5 {
+        width: 424px;
+    }
+
+    #modal3 h3, #modal5 h3 {
+        font-size: 23px;
+    }
+
+    #successMessage {
+        width: 270px;
+    }
+    #successMessage2 {
+        width: 270px;
+    }
+    #successMessage3 {
+        width: 270px;
+    }
+    #successMessage5 {
+        width: 280px;
     }
 }
 
@@ -596,32 +1277,50 @@ form {
     table {
         width: 345px;
     }
-    #modal1, #modal3 {
+
+    #modal1, #modal2 {
         width: 345px;
+        height: 380px;
     }
-    
-    #modal3{
+
+    #nome,
+    #celular,
+    #bairro {
+        width: 330px;
+    }
+
+    #email,
+    #cidade {
+        width: 330px;
+    }
+
+    #numero,
+    #uf {
+        width: 160.5px;
+    }
+
+    #logadouro,
+    #cpf {
+        width: 330px;
+    }
+    .modal-header h2 {
+        font-size: 20px;
+    }
+
+    .modal-header i{
+        font-size: 30px;
+    }
+
+    #modal4,
+    .table-sobre {
+        width: 345px;
+
+    }
+
+    #modal3, #modal5 {
+        width: 340px;
         height: 350px;
     }
-
-    #modal1 input {
-        width: 320px;
-    }
-
-    #modal1 button {
-        width: 270px;
-        font-size: 15px;
-        height: 49px;
-    }
-
-    .modal-header h2 {
-        font-size: 24px;
-    }
-
-    .modal-body3 h3 {
-        font-size: 23px;
-    }
-
 }
 
 @media (max-width: 350px) {
@@ -640,34 +1339,60 @@ form {
 
     table {
         width: 310px;
-        height: 400px;
+        height: 250px;
+    }
+
+    #modal1, #modal2 {
+        width: 310px;
+    }
+
+    #nome,
+    #celular,
+    #bairro {
+        width: 280px;
+    }
+
+    #email,
+    #cidade {
+        width: 280px;
+    }
+
+    #numero,
+    #uf {
+        width: 135.5px;
+    }
+
+    #logadouro,
+    #cpf {
+        width: 280px;
+    }
+
+    .modal-header h2 {
+        font-size: 19px;
+    }
+
+    .modal-header i{
+        font-size: 28px;
+    }
+
+    #modal1 button{
+        width: 180px;
+        height: 52px;
     }
 
     td th {
         font-size: 14px;
     }
 
-    #modal1, #modal3 {
-        width: 310px;
-    }
-    
-
-    #modal1 input {
+    #modal4,
+    .table-sobre {
         width: 300px;
     }
 
-    #modal1 button {
-        width: 270px;
-        font-size: 15px;
-        height: 49px;
+    #modal3, #modal5 {
+        width: 310px;
+        height: 350px;
     }
 
-    .modal-header h2 {
-        font-size: 21px;
-    }
-
-    .modal-header i {
-        font-size: 28px;
-    }
 
 }

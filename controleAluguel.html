@@ -98,7 +98,15 @@
     </header>
 
     <main>
-        <!-- Cadastro de Aluguel -->
+
+        <!-- Modais -->
+
+        <!-- Button cadastrar Locatário-->
+        <div class="aluguel">
+            <a class="open-modal1">CADASTRAR ALUGUEL</a>
+        </div>
+
+        <!-- Cadastro de Locatário -->
         <div id="fade1" class="hide"></div>
         <div id="modal1" class="hide">
             <div class="modal-header">
@@ -107,12 +115,13 @@
             </div>
 
             <div class="modal-body">
-                <form id="cadastroForm" action="controleEditoras.html">
-                    <input type="text" id="placeholder" placeholder="Nome do Usuário" required>
-                    <input type="text" id="placeholder" placeholder="Nome do Livro" required>
-                    <input type="date" id="placeholder" placeholder="Data de Devolução" required>
-                    <button class="comfirmar" type="submit">COMFIRMAR EMPRESTIMO</button>
+                <form id="cadastroForm" class="formulario">
+                    <input type="text" id="placeholder" placeholder="Nome" required>
+                    <input type="email" id="placeholder" placeholder="Nome do Livro" required>
+                    <input type="date" id="placeholder" placeholder="Data de devolução" required>
+                    <button type="submit">CADASTRAR</button>
                 </form>
+
             </div>
         </div>
 
@@ -121,38 +130,132 @@
             <p>Cadastro realizado com sucesso!</p>
         </div>
 
+        <!-- Editar Locatário -->
+        <div id="fade2" class="hide"></div>
+        <div id="modal2" class="hide">
+            <div class="modal-header">
+                <h2>Editar Aluguel</h2>
+                <i class="fa-solid fa-xmark close-modal2"></i>
+            </div>
 
-        <!-- Devolução de Aluguel -->
+            <div class="modal-body">
+                <form id="editarForm" class="formulario">
+                    <input type="text" id="placeholder" placeholder="Nome" required>
+                    <input type="email" id="placeholder" placeholder="Nome do Livro" required>
+                    <input type="date" id="placeholder" placeholder="Data de devolução" required>
+                    <button type="submit">CADASTRAR</button>
+                </form>
+
+            </div>
+        </div>
+
+        <!-- Mensagem de Sucesso -->
+        <div id="successMessage2" class="hide">
+            <p>Edição realizado com sucesso!</p>
+        </div>
+
+        <!-- Excluir Locatário -->
         <div id="fade3" class="hide"></div>
         <div id="modal3" class="hide">
             <div class="circulo">
                 <i class="fa-solid fa-exclamation"></i>
             </div>
             <div class="modal-body3">
-                <h3>Tem certeza que deseja fazer a devolução ?</h3>
+                <h3>Tem certeza que deseja excluir ?</h3>
                 <div class="button-container">
                     <button id="sim">SIM</button>
                     <button id="nao">NÃO</button>
                 </div>
             </div>
         </div>
-
-        <div class="aluguel">
-            <a class="open-modal1">CADASTRAR ALUGUEL</a>
+        <!-- Mensagem de Sucesso -->
+        <div id="successMessage3" class="hide">
+            <p>Exclusão realizado com sucesso!</p>
         </div>
 
-        <div class="container">
-            <div class="pesquisa">
-                <div id="barraPesquisa">
-                    <input class="pesquisa" type="text" placeholder="Pesquisa de Aluguel">
+        <!-- Sobre Locatário -->
+        <div id="fade4" class="hide"></div>
+        <div id="modal4" class="hide">
+            <div class="modal-header4 sobre">
+                <h2 class="sobre">Sobre</h2>
+                <i class="fa-solid fa-xmark close-modal4"></i>
+            </div>
+
+            <div class="modal-body">
+                <table class="table-sobre">
+                    <tr class="tabela">
+                        <th>Código</th>
+                        <th>Nome</th>
+                        <th>Nome do Livro</th>
+                        <th>Autor</th>
+                        <th>Editora</th>
+                        <th>Data de Devolução</th>
+                        <th>Status</th>
+                    </tr>
+                    <tr>
+                        <td data-cell="Código">1</td>
+                        <td data-cell="Nome">Pablo Moreira</td>
+                        <td data-cell="Nome do Livro">1984</td>
+                        <td data-cell="Autor">George Orwell</td>
+                        <td data-cell="Editora">Companhia das Letras</td>
+                        <td data-cell="Data de Devolução">31/03/2007</td>
+                        <td data-cell="Status">Alugado</td>
+                    </tr>
+                    <br>
+                </table>
+
+
+            </div>
+        </div>
+
+        <!-- Devolução Locatário -->
+        <div id="fade5" class="hide"></div>
+        <div id="modal5" class="hide">
+            <div class="circulo">
+                <i class="fa-solid fa-exclamation"></i>
+            </div>
+            <div class="modal-body5">
+                <h3>Tem certeza que deseja devolver?</h3>
+                <div class="button-container">
+                    <button id="sim5">SIM</button>
+                    <button id="nao5">NÃO</button>
                 </div>
             </div>
-            <button class="button-pesquisar">PESQUISAR</button>
         </div>
 
         <!-- Mensagem de Sucesso -->
-        <div id="successMessage3" class="hide">
+        <div id="successMessage5" class="hide">
             <p>Devolução realizada com sucesso!</p>
+        </div>
+
+
+        <!-- Excluir Locatário -->
+        <div id="fade3" class="hide"></div>
+        <div id="modal3" class="hide">
+            <div class="circulo">
+                <i class="fa-solid fa-exclamation"></i>
+            </div>
+            <div class="modal-body3">
+                <h3>Tem certeza que deseja excluir ?</h3>
+                <div class="button-container">
+                    <button id="sim">SIM</button>
+                    <button id="nao">NÃO</button>
+                </div>
+            </div>
+        </div>
+        <!-- Mensagem de Sucesso -->
+        <div id="successMessage3" class="hide">
+            <p>Exclusão realizado com sucesso!</p>
+        </div>
+
+        <!-- Barra de pesquisa -->
+        <div class="container">
+            <div class="pesquisa">
+                <div id="barraPesquisa">
+                    <input class="pesquisa" type="text" placeholder="Pesquisa do Locatário">
+                </div>
+            </div>
+            <button class="button-pesquisar">PESQUISAR</button>
         </div>
 
         <!-- Tabelas -->
@@ -162,8 +265,6 @@
                     <th>Código</th>
                     <th>Nome</th>
                     <th>Nome do Livro</th>
-                    <th>Autor</th>
-                    <th>Editora</th>
                     <th>Data de Devolução</th>
                     <th>Status</th>
                 </tr>
@@ -171,25 +272,22 @@
                     <td data-cell="Código">1</td>
                     <td data-cell="Nome">Pablo Moreira</td>
                     <td data-cell="Nome do Livro">1984</td>
-                    <td data-cell="Autor">George Orwell</td>
-                    <td data-cell="Editora">Companhia das Letras</td>
                     <td data-cell="Data de Devolução">31/03/2007</td>
                     <td data-cell="Status">Alugado</td>
-                    <td class="devolucao">
-                        <button class="button-devolucao open-modal3">DEVOLUÇÃO</button>
+                    <td class="acoes">
+                        <i class="fa-solid fa-magnifying-glass open-modal4"></i>
+                        <i class="fa-regular fa-pen-to-square open-modal2"></i>
+                        <i class="fa-regular fa-trash-can open-modal3"></i>
+                        <i class="fa-solid fa-check open-modal5"></i>
                     </td>
                 </tr>
-
                 <br>
             </table>
-
             <table>
                 <tr class="tabela">
                     <th>Código</th>
                     <th>Nome</th>
                     <th>Nome do Livro</th>
-                    <th>Autor</th>
-                    <th>Editora</th>
                     <th>Data de Devolução</th>
                     <th>Status</th>
                 </tr>
@@ -197,15 +295,15 @@
                     <td data-cell="Código">2</td>
                     <td data-cell="Nome">Pablo Moreira</td>
                     <td data-cell="Nome do Livro">1984</td>
-                    <td data-cell="Autor">George Orwell</td>
-                    <td data-cell="Editora">Companhia das Letras</td>
                     <td data-cell="Data de Devolução">31/03/2007</td>
                     <td data-cell="Status">Alugado</td>
-                    <td class="devolucao">
-                        <button class="button-devolucao open-modal3">DEVOLUÇÃO</button>
+                    <td class="acoes">
+                        <i class="fa-solid fa-magnifying-glass open-modal4"></i>
+                        <i class="fa-regular fa-pen-to-square open-modal2"></i>
+                        <i class="fa-regular fa-trash-can open-modal3"></i>
+                        <i class="fa-solid fa-check open-modal5"></i>
                     </td>
                 </tr>
-
                 <br>
             </table>
 
@@ -214,8 +312,6 @@
                     <th>Código</th>
                     <th>Nome</th>
                     <th>Nome do Livro</th>
-                    <th>Autor</th>
-                    <th>Editora</th>
                     <th>Data de Devolução</th>
                     <th>Status</th>
                 </tr>
@@ -223,15 +319,15 @@
                     <td data-cell="Código">3</td>
                     <td data-cell="Nome">Pablo Moreira</td>
                     <td data-cell="Nome do Livro">1984</td>
-                    <td data-cell="Autor">George Orwell</td>
-                    <td data-cell="Editora">Companhia das Letras</td>
                     <td data-cell="Data de Devolução">31/03/2007</td>
                     <td data-cell="Status">Alugado</td>
-                    <td class="devolucao">
-                        <button class="button-devolucao">DEVOLUÇÃO</button>
+                    <td class="acoes">
+                        <i class="fa-solid fa-magnifying-glass open-modal4"></i>
+                        <i class="fa-regular fa-pen-to-square open-modal2"></i>
+                        <i class="fa-regular fa-trash-can open-modal3"></i>
+                        <i class="fa-solid fa-check open-modal5"></i>
                     </td>
                 </tr>
-
                 <br>
             </table>
 
@@ -240,8 +336,6 @@
                     <th>Código</th>
                     <th>Nome</th>
                     <th>Nome do Livro</th>
-                    <th>Autor</th>
-                    <th>Editora</th>
                     <th>Data de Devolução</th>
                     <th>Status</th>
                 </tr>
@@ -249,15 +343,15 @@
                     <td data-cell="Código">4</td>
                     <td data-cell="Nome">Pablo Moreira</td>
                     <td data-cell="Nome do Livro">1984</td>
-                    <td data-cell="Autor">George Orwell</td>
-                    <td data-cell="Editora">Companhia das Letras</td>
                     <td data-cell="Data de Devolução">31/03/2007</td>
                     <td data-cell="Status">Alugado</td>
-                    <td class="devolucao">
-                        <button class="button-devolucao">DEVOLUÇÃO</button>
+                    <td class="acoes">
+                        <i class="fa-solid fa-magnifying-glass open-modal4"></i>
+                        <i class="fa-regular fa-pen-to-square open-modal2"></i>
+                        <i class="fa-regular fa-trash-can open-modal3"></i>
+                        <i class="fa-solid fa-check open-modal5"></i>
                     </td>
                 </tr>
-
                 <br>
             </table>
 
@@ -266,8 +360,6 @@
                     <th>Código</th>
                     <th>Nome</th>
                     <th>Nome do Livro</th>
-                    <th>Autor</th>
-                    <th>Editora</th>
                     <th>Data de Devolução</th>
                     <th>Status</th>
                 </tr>
@@ -275,15 +367,15 @@
                     <td data-cell="Código">5</td>
                     <td data-cell="Nome">Pablo Moreira</td>
                     <td data-cell="Nome do Livro">1984</td>
-                    <td data-cell="Autor">George Orwell</td>
-                    <td data-cell="Editora">Companhia das Letras</td>
                     <td data-cell="Data de Devolução">31/03/2007</td>
                     <td data-cell="Status">Alugado</td>
-                    <td class="devolucao">
-                        <button class="button-devolucao">DEVOLUÇÃO</button>
+                    <td class="acoes">
+                        <i class="fa-solid fa-magnifying-glass open-modal4"></i>
+                        <i class="fa-regular fa-pen-to-square open-modal2"></i>
+                        <i class="fa-regular fa-trash-can open-modal3"></i>
+                        <i class="fa-solid fa-check open-modal5"></i>
                     </td>
                 </tr>
-
                 <br>
             </table>
         </div>
