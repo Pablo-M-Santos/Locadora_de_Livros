@@ -2,9 +2,9 @@
   💻<br>Locadora WDA -  Pablo Santos
 </h1>
 
-![Resultado do projeto](./src/assets/locadora-api.png)
+![Resultado do projeto](./assets/imagens/locadoraFront.png)
 
-<h4 align="center"><a href="https://locadora-api-wda.vercel.app/#/">Clique aqui para acessar minha locadora</a></h4><br>
+<h4 align="center"><a href="https://pablo-m-santos.github.io/Locadora_de_Livros/">Clique aqui para acessar minha locadora</a></h4><br>
 
 ## 👤 Credenciais para acesso
 
