@@ -1,5 +1,5 @@
 <h1 align="center">
-  💻<br>Locadora API -  Pablo Santos
+  💻<br>Locadora WDA -  Pablo Santos
 </h1>
 
 ![Resultado do projeto](./src/assets/locadora-api.png)
